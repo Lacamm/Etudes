@@ -1,0 +1,9 @@
+martine,12,velo
+adeline,32,voiture
+julien,25,velo
+carole,37,voiture
+roland,27,moto
+patrick,48,velo
+pascaline,17,moto
+sylvain,24,moto
+elisabeth,92,carrosse

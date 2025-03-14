@@ -1,0 +1,42 @@
+img{display: flex;
+    flex-wrap: wrap;
+}
+h2{display: flex;
+    flex-wrap: nowrap;
+}
+
+
+aside, footer, li{
+    border: 2px black solid;
+}
+
+
+ul{
+    list-style: none; 
+}
+aside{
+    float: right;
+}
+
+
+#banniere{
+    border: 2px black solid;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+#outils{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.alinea{
+    padding-left: 20px;
+}
+.lien{
+    width: 70%;
+}
+.description{
+    display: flex;
+}

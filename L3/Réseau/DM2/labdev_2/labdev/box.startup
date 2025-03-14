@@ -1,0 +1,18 @@
+ip addr add 1.2.3.90/24 dev eth0
+ip addr add 10.22.20.129/28 dev eth1
+ip addr add 10.22.22.1/24 dev eth2
+ip addr add 10.22.21.1/24 dev eth3
+
+ip route add default via 1.2.3.4
+
+/etc/init.d/isc-dhcp-server start
+iptables -t nat -A POSTROUTING -o eth0 -j SNAT --to 1.2.3.90
+
+
+iptables -t nat -A PREROUTING -i eth0 -j DNAT --to 10.22.21.2
+
+
+###### iptables -t nat -A PREROUTING -i eth0 -j DNAT -m iprange --src-range 10.22.21.0--10.22.20.142
+###### iptables -t nat -A PREROUTING -i eth0 -j DNAT --to 10.22.21.0--10.22.20.142
+
+

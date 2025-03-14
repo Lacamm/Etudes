@@ -1,0 +1,6 @@
+ip -6 address add 2001:ad38::1/64 dev eth0
+ip -6 address add 2001:ad54::1/64 dev eth1
+
+/etc/init.d/radvd start
+/etc/init.d/isc-dhcp-server start
+

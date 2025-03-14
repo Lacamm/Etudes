@@ -1,0 +1,13 @@
+Liste des fonctionnalités de l'application Eldorado
+
+
+Créer un groupe privé (avec un code)
+Ajouter dépenses/remboursement
+Faire un historique des transactions
+Lister les membres du groupe
+Onglet paramètres (langues, son)
+Ajouter une photo de groupe
+
+
+
+Créer un compte

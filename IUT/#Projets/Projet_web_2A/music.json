@@ -1,0 +1,43 @@
+{
+  "music": [
+    {
+      "title": "The Great Divide",
+      "group": "Light the Torch",
+      "album": "Revival",
+      "year": 2018,
+      "favori": true,
+      "spotify": "https://open.spotify.com/track/12wAGwq5eCH5wndqHMNJ5e",
+      "uri": "http://localhost:3000/music/1",
+      "id": 1
+    },
+    {
+      "title": "Whatever It Takes",
+      "group": "Hollywood Undead",
+      "album": "Five",
+      "year": 2017,
+      "favori": false,
+      "spotify": "https://open.spotify.com/track/2ouOVzQTzSsLa2OH1Zxhvu",
+      "uri": "http://localhost:3000/music/2",
+      "id": 2
+    },
+    {
+      "title": "Inside the Fire",
+      "group": "Disturbed",
+      "album": "Industrible",
+      "year": "2008",
+      "favori": false,
+      "spotify": "https://open.spotify.com/track/2nmL3Tb25nvkUnwjwmL0Sq",
+      "uri": "http://localhost:3000/music/3",
+      "id": 3
+    },
+    {
+      "title": "Metal",
+      "group": "Deathstars",
+      "album": "The Greatest Hits on Earth",
+      "year": "2011",
+      "favori": true,
+      "spotify": "https://open.spotify.com/track/1tKn8gj66mcRa5r1HgYhD6",
+      "id": 4
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+cp /shared/etc/quagga/* /etc/quagga/
+/etc/init.d/quagga start

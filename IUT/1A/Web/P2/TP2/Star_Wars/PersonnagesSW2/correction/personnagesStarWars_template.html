@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+	<html lang="fr">
+	<head> <meta charset ="utf-8"/>
+	<title>Star Wars</title>
+	<link rel="stylesheet" href="personnagesStarWars.css" />
+</head>
+
+<body>
+	<header>
+		<h1>Les personnages de Star Wars</h1>
+		<img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/694px-Star_Wars_Logo.svg.png" alt="">
+	</header>
+	
+    <section>
+    <section>
+        <h2>Question 1 - Liste des personnages</h2>
+        <ul>
+            {% for perso in liste_persos %}
+            <li>{{perso[0]}}</li>
+		    {% endfor %}
+        </ul>
+    </section>
+
+    <section>
+        <h2>Question 2 - Liste des femmes</h2>
+       <ul>
+            {% for nom in liste_femmes %}
+            <li>{{nom}}</li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section>
+        <h2>Question 3 - Liste des grands</h2>
+        <ul>
+            {% for nom in liste_grands %}
+            <li>{{nom}}</li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section>
+        <h2>Question 4 - tableau des personnages par genre</h2>
+        <table>
+        <tr><th>Les hommes</th>
+            {% for nom in liste_hommes %}
+            <td>{{nom}}</td>
+            {% endfor %}
+        </tr>
+        <tr><th>Les femmes</th>
+            {% for nom in liste_femmes %}
+            <td>{{nom}}</td>
+            {% endfor %}
+        </tr>
+            <tr><th>Les droides</th>
+            {% for nom in liste_droides %}
+            <td>{{nom}}</td>
+            {% endfor %}
+        </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Question 5 - Tous les personnages </h2>
+        <table>
+            <tr><th>Noms</th><th>Genres</th><th>Tailles</th></tr>
+            {% for perso in liste_persos %}
+            <tr><td class="{{perso[1]}}">{{ perso[0] }}</td><td>{{ perso[1] }}</td><td>{{ perso[2] }} cm</td></tr>
+            {% endfor %}
+        </table>
+    </section>
+    </section>
+	<footer>
+		Contact : moi@univ-orleans.fr
+	</footer>
+</body> </html>

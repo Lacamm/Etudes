@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="clair.css" />
+  <title>Selection de liens en JS</title>
+  <script type="text/javascript">
+    function changeCSS() {
+      var stylesheet = document.querySelector("link[rel=stylesheet]");
+      console.log(stylesheet);
+      if (stylesheet.getAttribute('href') == 'clair.css')
+        stylesheet.setAttribute('href', 'fonce.css');
+      else stylesheet.setAttribute('href', 'clair.css');
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <nav id="menu">
+      <ul>
+        <li> <a href="page1.html"> Page 1 </a> </li>
+        <li> <a href="page2.html"> Page 2 </a> </li>
+        <li> <a href="page3.html"> Page 3 </a> </li>
+        <li> <a href="page4.html"> Page 4 </a> </li>
+      </ul>
+    </nav>
+    <section>
+      <article class="my">
+        <div id="un">
+          Contenu Bla bla ...
+        </div>
+        <div id="deux">
+          Contenu Bli bli ...
+        </div>
+      </article>
+    </section>
+    <button onclick="changeCSS()">
+      ChangeCSS
+    </button>
+    <script type="text/javascript">
+      function fonct1() {
+        const all = document.querySelectorAll('*');
+        for (elem of all)
+          console.log(elem);
+      }
+      function fonct2() {
+        const liens = document.querySelectorAll('a');
+        for (lien of liens)
+          console.log(lien.getAttribute('href'));
+      }
+      function fonct3() {
+        const all = document.querySelectorAll('ul a');
+        for (let i = 0; i < all.length; i++)
+          console.log(all[i]);
+      };
+
+      function fonct4() {
+        const lastLink = document.querySelector('nav li:last-child a');
+        console.log(lastLink.getAttribute('href'));
+      };
+
+      function fonct5(){
+        const my = document.querySelector('article my');
+        console.log(my.getAttribute('article'));
+      }
+
+      function fonct6(){
+        const mydiv = document.querySelector('article my div deux');
+        console.log(mydiv.getAttribute('div'));
+      }
+
+      window.onload = fonct2();
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+format 224
+
+classcanvas 128055 class_ref 128055 // Panier
+  classdiagramsettings show_members_full_definition yes show_members_visibility yes member_max_width 0 end
+  xyzwh 179 134 2000 125 93
+end
+classcanvas 128183 class_ref 128183 // Corrige
+  classdiagramsettings member_max_width 0 end
+  xyzwh 117 293 2000 251 131
+end
+classcanvas 128823 class_ref 128311 // CB
+  classdiagramsettings member_max_width 0 end
+  xyzwh 479 340 2000 119 79
+end
+classcanvas 128951 class_ref 128439 // PayPal
+  classdiagramsettings member_max_width 0 end
+  xyzwh 623 342 2000 135 81
+end
+classcanvas 129079 class_ref 128567 // Paiement
+  classdiagramsettings member_max_width 0 class_drawing_mode class end
+  xyz 555 142 2000
+end
+relationcanvas 128567 relation_ref 128055 // <unidirectional association>
+  from ref 128055 z 2001 to ref 128183
+  role_a_pos 251 268 3000 no_role_b
+  multiplicity_a_pos 226 268 3000 no_multiplicity_b
+end
+relationcanvas 129591 relation_ref 128311 // <association>
+  from ref 128055 z 2001 to ref 129079
+  role_a_pos 517 156 3000 no_role_b
+  multiplicity_a_pos 537 189 3000 no_multiplicity_b
+end
+relationcanvas 130103 relation_ref 128439 // <realization>
+  decenter_end 241
+  from ref 128823 z 2001 to point 536 272
+  line 130359 z 2001 to point 602 272
+  line 130487 z 2001 to ref 129079
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 130615 relation_ref 128695 // <realization>
+  from ref 128951 z 2001 to point 687 273
+  line 130871 z 2001 to point 655 273
+  line 130743 z 2001 to ref 129079
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+end

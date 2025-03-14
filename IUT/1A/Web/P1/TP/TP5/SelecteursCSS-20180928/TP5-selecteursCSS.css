@@ -1,0 +1,27 @@
+/* TP5 - Les selecteurs CSS */
+/* Vous pouvez mettre des commentaires dans un fichier CSS ! */
+
+h1 , h2{
+    color:red;
+    }
+section > p{
+    color: blue;
+    }
+article h2{
+    font-size: 200%;
+    }
+body >p{
+    color: green ;
+    }
+.joliTitre {
+    border-width : 1 px;
+    border-style : dashed ;
+    border-color :red;
+    }
+.spoil {
+    background-color :
+    lightgray ;
+    }
+#nature {
+    background-color :lime;
+    }

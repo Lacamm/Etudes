@@ -1,0 +1,47 @@
+EXO 1
+
+notes <- c(12,19.5,14)
+matieres <- c("OMGL", "AP", "ASR")
+
+names(notes) <- matieres
+
+neam(notes)
+
+sum(notes) / length(notes)
+
+poids <- (1,2,1.5)
+
+weighted.mean(notes,poids)
+
+
+EXO 2
+
+vu<-runif(100)
+
+sum(vu)
+
+sum(vu>0.75) 
+
+sum(vu>0.5) 
+
+sum(vu[seq(0, length(vu), 2)])
+
+vs <- vu[seq(2, length(vu),2)] + vu[seq(1, length(vu),2)]
+
+sum(vu > 0.25 & vu < 0.75)
+
+
+EXO 3
+
+M <- matrix(0,15,3)
+
+M[2,2]
+M[3,] //lignes
+M[,3] //colonnes
+
+M[,1:2]
+M[1:4,1:2]
+
+
+
+

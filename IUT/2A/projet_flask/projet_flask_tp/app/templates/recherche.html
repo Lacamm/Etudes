@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block styles %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static', filename='')}}">
+{% endblock %}
+
+{% block main %}
+<h1>{{ title }}</h1>
+
+    {% for album in albums %}
+    <a href="{{ url_for('detail', albumid=album.entryID) }}" class="carte" title="{{ album.title }}">
+        <div class="carte_img_container">
+        {% if album.img != None %}
+            <img src="{{ url_for('static', filename='images/'+album.img) }}" class="carte_img"/>
+        {% endif %}
+        </div>
+        <div class="carte_txt_container">
+            <h2 class="carte_title"> {{ album.title }} </h2>
+            <p class="carte_num"> {{ album.entryID }} </p>
+        </div>
+    </a>
+    {% endfor %}
+
+{% endblock %}

@@ -1,0 +1,3 @@
+class Amelioration
+!!!130563.java!!!	Amelioration(in objet : Objet)
+        this.objet = objet;

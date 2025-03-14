@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Meteo Ajax avec fetch/then</title>
+
+</head>
+
+<body>
+    <div>
+        Code postal :
+        <input type="text" id="code_postal" maxlength="5" size="5" />
+    </div>
+    <div id="meteo"></div>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        $(function () {
+            // Définition de l'évènement sur le changement de valeur dans le champ de saisie pour le code postal
+            $("#code_postal").keyup(function (event) {
+                // Lecture du code postal
+                const cp = $(this).val();
+                // On teste que le code postal soit complet et numérique
+                if ((cp.length == 5) && (!isNaN(cp))) {
+                    const url = "http://localhost/~roza/meteo/meteoAjaxJSON.php";
+                    fetch(url, {
+                        method: "POST",
+                        headers: {
+                            "Accept": "application/json",
+                            "Content-type": "application/x-www-form-urlencoded;charset='utf-8'"
+                        },
+                        body: "cp=" + cp
+                    })
+                        .then(function (msg) { return msg.json() })
+                        .then(res => {
+                            const date = res['cp'];
+                            const jour = res['jour'];
+                            const heure = res['heure'];
+                            const meteo = res['meteo'];
+                            // Formatage du résultat avant de l'afficher
+                            $("#meteo").html("<b>Le " + date + " à " + heure + "</b> : " + meteo + " (" + cp + ")");
+                        });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+exo 3
+
+3) let enfants = document.body.children
+
+for (enfant of enfants) console.log(enfant)
+
+for (enfant of enfants) console.log(enfant.children)
+
+for (enfant of enfants) {for (petitenfant of enfant.children) console.log(petitenfant)}
+
+
+4)
+
+for (enfant of enfants) {for (petitenfant of enfant.children) console.log(petitenfant.codeName)}
+
+for (enfant of enfants) {for (petitenfant of enfant.children)
+petitenfant.appendChild(petitenfant.nodeName)}
+
+5) const titre 1 = document.getElementById('titre1')
+titre1.parentElement/parentNode
+
+6) 

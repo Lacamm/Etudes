@@ -1,0 +1,38 @@
+Exo 1
+
+1) read.csv("sleep.csv",dec=",",sep=" ")
+
+2) sommeil <- read.csv("sleep.csv",dec=",",sep=" ")
+
+3) 
+
+Exo 2
+
+1) sommeil$Dreaming / na.omit(sommeil$Dreaming)
+
+2) sommeil$Species[na.omit(sommeil$Sleep<4)]
+
+3) sommeil$Species[which.max(sommeil$Lifespan)]
+
+4) sort(sommeil$Lifespan) / sommeil$Species[order(sommeil$Lifespan)] //sort = val, order = indices
+
+
+Exo 3
+
+1) plot(sommeil)
+
+2) rowMeans(sommeil[9:11], na.rm=TRUE) / apply(sommeil[9:11], 1, mean)
+
+sommeil <- cbind(sommeil,"Avg.Danger"=rowMeans(sommeil[9:11], na.rm=TRUE)
+
+3) plot(sommeil$Body.Weight, sommeil$Avg.Danger) / pas correlation
+
+4) plot(sommeil$Brain.Weight,sommeil$Avg.Danger) / pas de correlation
+
+5) mean(na.omit((sommeil$Dreaming/sommeil$Sleep)[sommeil$Sleep.exposure == 1]))
+
+6) 	tauxReve <- unction(data, attribut, valeur){
+	return(mean((data$Dreaming/data$Sleep)[data[attribut] == valeur], na.rm=TRUE))
+	}
+	
+	tauxReve(sommeil, "Sleep.exposure",1)

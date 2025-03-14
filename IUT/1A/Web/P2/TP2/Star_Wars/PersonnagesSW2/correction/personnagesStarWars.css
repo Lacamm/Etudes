@@ -1,0 +1,75 @@
+/* Positionnement des 3 blocs header nav et footer */
+
+body{
+	margin:1em;
+  height: calc(100vh - 2em);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+body>section{
+  flex: 1 1 70%;
+}
+
+/* Fond gris pour le footer */
+footer{
+  background-color: black;
+  color:yellow;
+  padding:1em;
+    margin:1em;
+}
+/* Positionnement du titre et du logo dans le header */
+header{
+  display: flex;
+  background-color: black;
+    margin:1em;
+}
+
+h1{
+  flex:1 1 60%;
+  color:yellow;
+}
+.male{
+  color:green;
+}
+.female{
+  color:blue;
+}
+.droide{
+  font-style: italic;
+}
+.logo{
+  display: block;
+  flex:0 0 10%;
+}
+
+/* Mise en forme desx tableau */
+
+table{
+	/* width:auto; pas util */  
+  border-collapse: collapse;
+  text-align: center;
+  margin: 0.5em;
+}
+tr, th, td{
+  border: thin solid grey;
+  padding: 0.5em;
+ }
+
+th{
+  background-color: lightgray;
+}
+
+/* Sur deux colonnes */
+body>section{
+  display: flex;
+  flex-wrap: wrap;
+
+
+}
+section>section{
+  flex: 1 0 30%;
+  margin:1em;
+  padding:1em;
+   background-color: lightgray;
+}

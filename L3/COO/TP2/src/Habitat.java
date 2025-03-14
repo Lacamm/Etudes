@@ -1,0 +1,4 @@
+
+interface Habitat {
+  void manger();
+}

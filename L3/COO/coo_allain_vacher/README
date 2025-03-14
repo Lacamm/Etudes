@@ -1,0 +1,42 @@
+Projet COO RPG
+
+ALLAIN Lucas
+Vacher Antoine
+
+Nous avons fait, pour ce projet deux classe Main. Le premier, InterfaceJeu qui joue un scénario précis et qui montre les fonctionnalités possibles du jeu.
+Le deuxième, JeuInteractif, qui comme son nom l'indique, permet de jouer avec des lignes de commandes afin de jouer de façon interactive.
+
+Attention, les commandes à écrire pour le main JeuInteractif sont sensible, pour ce qui est des commandes, il faut éviter de faire des espaces et pour ce qui est
+de la saisie des noms des objets, il faut les écrire de la même façon qu'afficher dans l'inventaire.
+
+Ces deux main possèdent les mêmes configurations. Il y a dans cette configuration de base deux donjons, un qui est réalisable en équipant les objets présents 
+dans l'inventaire de base, ce donjon permet de voir le déroulement du jeu. Quant au deuxième, il permet de voir la mort du personnage car le monstre vous tuera en un coup.
+Il y a aussi l'instanciation de toutes les fabriques ainsi que du marchand.
+
+Dans le main InterfaceJeu, le scénario commence donc par la création du personnage avec l'évènement eventCreationPersonnage() qui prend en paramètre le nom du personnage
+ainsi que la fabrique à utiliser.
+
+Ensuite, on utilise l'évènement eventEquiper() qui prend en paramètre un nom d'objet afin d'équiper deux équipements présents dans l'inventaire de base et on utilise l'évènement
+eventVoirInventaire() qui permet d'afficher l'inventaire. Après, on utilise l'évènement eventEntrerDonjon() qui prend en paramètre un nom de donjon est qui permet d'entrer 
+dans le donjon.
+
+On a ensuite une série d'attaques grâce à l'évènement eventAttaque() qui prend en paramètre le nom de l'adversaire à attaquer.
+Une fois le combat de la première pièce fini, on utilise un consommable afin de régénérer sa vie grâce à l'évènement eventConsommer() qui prend en paramètre un nom 
+d'objet de type consommable.
+
+Après cela, on rentre dans la pièce suivante grâce à l'évènement eventPieceSuivante() et on attaque le boss de la deuxième pièce avec l'event eventAttaque().
+Après avoir battu le boss, on utilise l'évènement eventpieceSuivante() qui nous permet de sortir du donjon car il s'agissait de la dernière salle du donjon.
+
+Après ce donjon, on regarde l'inventaire du personnage, le personnage équipe ensuite les objets qu'il a reçus après avoir complétés le donjon.
+On se rend ensuite dans la boutique du marchand avec l'évènement eventEntrerMarchand() et on regarde les objets à vendre avec l'évènement eventVoirBoutique(). 
+On décide d'acheter un objet avec l'évènement eventAcheter() qui prend en paramètre le nom de l'objet à acheter et on améliorer un équipement avec l'évènement
+eventAmeliorer() qui prend en paramètre le nom de l'objet à améliorer. Après tout ça, on sort de chez le marchand avec l'évènement eventSortieMarchand().
+
+On rentre ensuite dans le deuxième donjon, et on attaque le boss qui est à l'intérieur qui fini par nous tuer.
+
+Après cela, on regarde notre inventaire afin de voir les changements suite à la mort du personnage.
+Enfin, on utilise l'évènement eventJeter() qui prend en paramètre un nom d'objet et qui, jette l'objet choisi et on regarde l'inventaire du personnage pour voir 
+si l'objet a bel et bien été jeté.
+
+
+

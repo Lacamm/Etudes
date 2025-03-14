@@ -1,0 +1,3 @@
+class Gluant
+!!!150403.java!!!	Gluant(in nom : String)
+        super(nom,10,6,1,2);

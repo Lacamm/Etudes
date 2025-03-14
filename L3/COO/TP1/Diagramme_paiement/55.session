@@ -1,0 +1,15 @@
+window_sizes 1280 975 300 974 827 96
+cleanlooks_style
+diagrams
+  active  classdiagram_ref 128055 // diagram_panier
+    969 801 100 A4 0 0
+end
+show_stereotypes
+open
+  class_ref 128055 // Panier
+  class_ref 128311 // CB
+  class_ref 128439 // PayPal
+  class_ref 128567 // Paiement
+  deploymentview_ref 128055 // Panier
+end
+end

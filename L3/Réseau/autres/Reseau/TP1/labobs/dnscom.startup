@@ -1,0 +1,4 @@
+ip addr add 10.0.1.2/8 dev eth0
+ip addr add 42.13.37.42/16 dev eth1
+source /shared/rezotrick
+/etc/init.d/bind start

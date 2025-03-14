@@ -1,0 +1,17 @@
+package controleur.ordres;
+
+public enum TypeOrdre {
+
+    SHOW_MENU,
+    SHOW_AJOUT,
+    SHOW_TOUSLESFILMS,
+    ERREUR_FILM_DEJA_EXISTANT,
+    ERREUR_GENRE_INEXISTANT,
+    DATA_FILM_AJOUTE,
+    DO_VIDER_CHAMPS,
+    DO_AFFICHER_ERREUR,
+    CHARGEMENT_GENRE,
+    CHARGEMENT_FILM,
+    ;
+
+}

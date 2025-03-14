@@ -1,0 +1,19 @@
+PERSONNE [id, nom, prenom, ad, tel(MVD)]
+
+PATIENT [idPat, numSec, dateNais]
+
+MEDECIN [idMed, grade, bureau, poste, domSpec]
+
+PATHOLOGIE [pato, domSpec]
+
+OPERATION [idPat, dateOp, refOp, salleOp, heureDebOp, heureFinOp, descripOp, pato, idResp, nomContact, telContact, situation, derniereMaj]
+
+IDENTIFIANT_OPE [dateOp, refOp, salleOp, idPat]
+
+RESPONSALE_OPE[idResp, dateOp, heureDebOp, idPat]
+
+MEDECIN_OPE[idMed, dateOp, heureDebOp, idPat]
+
+PLANNING_OPE [dateOp, heureDebOp, salleOp, idPat]
+
+CONSULATION [idMed, dateCons, plageHCons, numCons, dateOp]

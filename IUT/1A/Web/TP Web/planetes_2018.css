@@ -1,0 +1,75 @@
+ html body{
+    margin: 0%;
+    padding: 0%;
+}
+
+footer ,header{
+    background-color: black;
+}
+
+footer > p, header > h1{
+    color: yellow;
+    width: 90%;
+    padding-left: 1%; 
+}
+
+section{
+    background-color: grey;
+}
+
+aside{
+    background-color: grey;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+}
+
+header{
+    display: flex;
+}
+
+footer{
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+}
+
+.debut{
+    display: flex;
+    flex: wrap;
+}
+
+aside > ul{
+    list-style: none;
+    padding-left: 0%;
+}
+
+table {
+    border: 1px solid black; 
+    width:auto;
+    border-collapse:collapse;
+}
+
+td { 
+    border :1px solid black;
+    width:auto;
+    padding:2px 2px 2px 2px;
+}
+
+th { 
+    border :1px solid black;
+    width:auto;
+}
+
+section{
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+}
+
+main{
+    display: flex;
+    flex: wrap;
+}
+
+.noyau{
+    display: flex;
+    flex:wrap;
+}

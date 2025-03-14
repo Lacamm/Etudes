@@ -1,0 +1,57 @@
+class Objet
+!!!128003.java!!!	Objet(in nom : String, in type : Objet::TYPE, in pv : int, in attaque : int, in defense : int, in poids : int, in pvRendu : int, in effet : String)
+    this.nom = nom;
+    this.type = type;
+    this.pv = pv;
+    this.attaque = attaque;
+    this.defense = defense;
+    this.poids = poids;
+    this.pvRendu = pvRendu;
+    this.effet = effet;
+    this.ameliore = false;
+!!!128131.java!!!	Objet()
+    this.nom = "";
+    this.type = null;
+    this.pv = 0;
+    this.attaque = 0;
+    this.defense = 0;
+    this.poids = 0;
+    this.pvRendu = 0;
+    this.effet = " ";
+    this.ameliore = false;
+!!!128259.java!!!	getNom() : String
+    return nom;
+!!!128387.java!!!	setNom(in nom : String) : void
+    this.nom = nom;
+!!!128515.java!!!	getType() : Objet::TYPE
+    return type;
+!!!128643.java!!!	setType(inout type : Objet::TYPE) : void
+    this.type = type;
+!!!128771.java!!!	getPv() : int
+    return pv;
+!!!128899.java!!!	setPv(in pv : int) : void
+    this.pv = pv;
+!!!129027.java!!!	getAttaque() : int
+    return attaque;
+!!!129155.java!!!	setAttaque(in attaque : int) : void
+    this.attaque = attaque;
+!!!129283.java!!!	getEffet() : String
+    return effet;
+!!!129411.java!!!	setEffet(in effet : String) : void
+    this.effet = effet;
+!!!129539.java!!!	getDefense() : int
+    return defense;
+!!!129667.java!!!	setDefense(in defense : int) : void
+    this.defense = defense;
+!!!129795.java!!!	getPoids() : int
+    return poids;
+!!!129923.java!!!	setPoids(in poids : int) : void
+    this.poids = poids;
+!!!130051.java!!!	getPvRendu() : int
+    return pvRendu;
+!!!130179.java!!!	setPvRendu(in pvRendu : int) : void
+    this.pvRendu = pvRendu;
+!!!130307.java!!!	isAmeliore() : boolean
+    return ameliore;
+!!!130435.java!!!	setAmeliore(inout ameliore : boolean) : void
+    this.ameliore = ameliore;

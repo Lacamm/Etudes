@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8"/>
+	<title>TP7</title>
+</head>
+<body>
+	<header>
+		<h1> Les courses de {{nom}} </h1> 
+	</header>
+    <h2>Produits achetés :</h2>
+	<ul>
+        {% for produit in courses %}
+        <li>{{produit}}</li>
+        {% endfor %}
+	</ul>
+    <h2>Facture :</h2>
+	<ul>
+        {% for i in range(prix|length) %}
+        <li>{{prix[i]}} euros</li>
+        {% endfor %}
+	</ul>
+    <p>Total : {{total}}</p>
+</body>
+</html>

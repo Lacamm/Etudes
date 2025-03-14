@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Exo3</title>
+    </head>
+
+    <body>
+        <section>
+            <header>
+                <h1 id="titre1">Titre 1</h1>
+            </header>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+            </ul>
+        </section>
+
+        <section>
+            <article>
+                <header>
+                    <h1 id="titre2">Titre 1 V2</h1>
+                </header>
+            </articl>
+        </section>
+    </body>
+    <script>
+        let enfants = document.body.children
+        console.log(enfants.length)
+        for (enfant of enfants) {
+            for (petitenfant of enfant.children) {
+                const texte = document.createTextNode(petitenfant.nodeName);
+                petitenfant.appendChild(texte);
+            }
+        }
+        //3.7
+        // getElementById() => Element
+        // getElementByClassName => HTML collection
+    </script>
+</html>

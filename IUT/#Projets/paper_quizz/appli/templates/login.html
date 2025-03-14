@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block styles %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+{% endblock %}
+
+{% block main %}
+<div id="grosdiv">
+
+    <section class="connexion">
+    <form name="login" role="form" method="POST" action="{{ url_for('login') }}">
+        {{ login_form.hidden_tag() }}
+        <h1>Se connecter</h1>
+        <div>
+            <p>{{ login_form.username.label }}</p>
+            {{ login_form.username(class_="formInput", placeholder="Identifiant") }}<br>
+            <a href="#">J'ai oublié mon identifiant</a>
+            <p>{{ login_form.password.label }}</p>
+            {{ login_form.password(class_="formInput", placeholder="Mot de passe") }}<br>
+            <a href="#">J'ai oublié mon mot de passe</a>
+            <p>{{ login_form.submit() }}</p>
+        </div>
+    </form>
+    </section>
+
+    <section class="inscription">
+    <form name="signup" role="form" method="POST" action="{{ url_for('login') }}">
+        {{ signup_form.hidden_tag() }}
+        <h1>S'inscrire</h1>
+        <div>
+            <p>{{ signup_form.identifiant.label }}</p>
+            {{ signup_form.identifiant(class_="formInput", placeholder="Identifiant") }}
+            <p>{{ signup_form.prenom.label }}</p>
+            {{ signup_form.prenom(class_="formInput", placeholder="Prénom") }}
+            <p>{{ signup_form.nom.label }}</p>
+            {{ signup_form.nom(class_="formInput", placeholder="Nom") }}
+            <p>{{ signup_form.email.label }}</p>
+            {{ signup_form.email(class_="formInput", placeholder="example@email.com") }}
+            <p>{{ signup_form.email_confirm.label }}</p>
+            {{ signup_form.email_confirm(class_="formInput", placeholder="example@email.com") }}
+            <p>{{ signup_form.mdp.label }}</p>
+            {{ signup_form.mdp(class_="formInput", placeholder="Mot de passe") }}
+            <p>{{ signup_form.mdp_confirm.label }}</p>
+            {{ signup_form.mdp_confirm(class_="formInput", placeholder="Mot de passe") }}
+
+            <p>{{ signup_form.submit() }}</p>
+        </div>
+    </form>
+    </section>
+
+</div>
+
+
+{% endblock %}
+

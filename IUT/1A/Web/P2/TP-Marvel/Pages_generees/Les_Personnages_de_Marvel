@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang='fr'>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Personnages de Marvel</title>
+        <link rel='stylesheet' href='../css-Marvel.css'/>
+    </head>
+    <body>
+        <h1>Tous les personnages de Marvel</h1>
+        <table>
+            <tr>
+                <td></td>
+                                    <td><img src="/pub/1A/DocNum/personnagesMarvel/"/></td>
+                                    <td><img src="/pub/1A/DocNum/personnagesMarvel/"/></td>
+                                    <td><img src="/pub/1A/DocNum/personnagesMarvel/"/></td>
+                                    <td><img src="/pub/1A/DocNum/personnagesMarvel/"/></td>
+                                </tr>
+        </table>
+    </body>
+</html>

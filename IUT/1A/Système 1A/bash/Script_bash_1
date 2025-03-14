@@ -1,0 +1,6 @@
+#! /usr/bin/python
+"Auteur :  A. B."
+" Ce script liste le contenu de votre home"
+str = 'salut'
+print(str)
+" Ceci est un commentaire et ne sera pas execute"

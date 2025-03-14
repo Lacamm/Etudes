@@ -1,0 +1,7 @@
+C:\Users\LUCAS\Documents\Programmation\C#\PremierProjetCSharp\PremierProjetCSharp\bin\Debug\PremierProjetCSharp.exe.config
+C:\Users\LUCAS\Documents\Programmation\C#\PremierProjetCSharp\PremierProjetCSharp\bin\Debug\PremierProjetCSharp.exe
+C:\Users\LUCAS\Documents\Programmation\C#\PremierProjetCSharp\PremierProjetCSharp\bin\Debug\PremierProjetCSharp.pdb
+C:\Users\LUCAS\Documents\Programmation\C#\PremierProjetCSharp\PremierProjetCSharp\obj\Debug\PremierProjetCSharp.csprojAssemblyReference.cache
+C:\Users\LUCAS\Documents\Programmation\C#\PremierProjetCSharp\PremierProjetCSharp\obj\Debug\PremierProjetCSharp.csproj.CoreCompileInputs.cache
+C:\Users\LUCAS\Documents\Programmation\C#\PremierProjetCSharp\PremierProjetCSharp\obj\Debug\PremierProjetCSharp.exe
+C:\Users\LUCAS\Documents\Programmation\C#\PremierProjetCSharp\PremierProjetCSharp\obj\Debug\PremierProjetCSharp.pdb

@@ -1,0 +1,18 @@
+image: openjdk:8
+
+before_script:
+  - apt-get update
+  - apt-get -y install ant
+  - apt-get -y install junit4
+
+java:
+  stage: test
+  script:
+  - ant test-html
+  - ant test
+  artifacts:
+    when: always
+    paths:
+      - reports/
+    reports:
+      junit: reports/TEST-*.xml

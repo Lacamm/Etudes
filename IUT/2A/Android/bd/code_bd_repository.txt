@@ -1,0 +1,70 @@
+[17:32] JULIEN ARSOUZE
+    
+package com.example.room20202021.BD;
+import android.app.Application;
+import android.os.AsyncTask;
+import android.util.Log;
+import androidx.lifecycle.LiveData;
+import java.util.List;
+public class WordRepository {​​​​​
+    private WordDao wordDao;
+    private LiveData<List<Word>> allWords;
+    private LiveData<Integer> nbMots;
+    
+    WordRepository(Application application){​​​​​
+        WordRoomDatabase db = WordRoomDatabase.getDatabase(application);
+        wordDao = db.wordDao();
+        allWords = wordDao.getAllWords();
+        nbMots = wordDao.nbWordsLD();
+    }​​​​​
+    
+    LiveData<List<Word>> getAllWords(){​​​​​ return allWords;}​​​​​
+    
+    LiveData<Integer> getNbMotsLD(){​​​​​ return nbMots;}​​​​​
+    
+    public void insert(Word word){​​​​​
+        new insertAsyncTask(wordDao).execute(word);
+    }​​​​​
+    
+    private static class insertAsyncTask extends AsyncTask<Word,Void,Void>{​​​​​
+        private WordDao wordDao;
+        
+        insertAsyncTask(WordDao w){​​​​​ wordDao = w;}​​​​​
+        
+        @Override
+protected Void doInBackground(final Word... params){​​​​​
+           wordDao.insert(params[0]); 
+           return null;
+        }​​​​​
+    }​​​​​
+    public void deleteAll(){​​​​​
+        new deleteAsyncTask(wordDao).execute();
+    }​​​​​
+    private static class deleteAsyncTask extends AsyncTask<Void,Void,Void>{​​​​​
+        private WordDao wordDao;
+        deleteAsyncTask(WordDao w){​​​​​ wordDao = w;}​​​​​
+        @Override
+protected Void doInBackground(final Void... params){​​​​​
+            wordDao.deleteAll();
+            return null;
+        }​​​​​
+    }​​​​​
+    public Integer getNbMots (){​​​​​
+        try {​​​​​
+            return new getNbMotsAsyncTask(wordDao).execute().get();
+        }​​​​​catch (Exception e){​​​​​
+            Log.d("MesLogs","pb getNbMots");
+        }​​​​​
+        return null;
+    }​​​​​
+    private static class getNbMotsAsyncTask extends AsyncTask<Void,Void,Integer>{​​​​​
+        private WordDao wordDao;
+        getNbMotsAsyncTask(WordDao w){​​​​​ wordDao = w;}​​​​​
+        @Override
+protected Integer doInBackground(final Void... params){​​​​​
+            return new Integer(wordDao.nbWords());
+        }​​​​​
+    }​​​​​
+}​​​​​
+
+<https://teams.microsoft.com/l/message/19:9b796986f01943d496698f808dc4a4e1@thread.tacv2/1615998771286?tenantId=967236d1-9003-4f1a-9556-8afe047945f1&amp;groupId=3eb4c95f-61e1-47a3-9ed4-29bb225d1d3d&amp;parentMessageId=1615997251797&amp;teamName=IUTo_ETU_Info_S4_2A3&amp;channelName=M4104C-Applications Mobiles&amp;createdTime=1615998771286>

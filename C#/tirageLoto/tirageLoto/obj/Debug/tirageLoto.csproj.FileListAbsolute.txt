@@ -1,0 +1,7 @@
+C:\Users\LUCAS\Documents\Programmation\C#\tirageLoto\tirageLoto\bin\Debug\tirageLoto.exe.config
+C:\Users\LUCAS\Documents\Programmation\C#\tirageLoto\tirageLoto\bin\Debug\tirageLoto.exe
+C:\Users\LUCAS\Documents\Programmation\C#\tirageLoto\tirageLoto\bin\Debug\tirageLoto.pdb
+C:\Users\LUCAS\Documents\Programmation\C#\tirageLoto\tirageLoto\obj\Debug\tirageLoto.csprojAssemblyReference.cache
+C:\Users\LUCAS\Documents\Programmation\C#\tirageLoto\tirageLoto\obj\Debug\tirageLoto.csproj.CoreCompileInputs.cache
+C:\Users\LUCAS\Documents\Programmation\C#\tirageLoto\tirageLoto\obj\Debug\tirageLoto.exe
+C:\Users\LUCAS\Documents\Programmation\C#\tirageLoto\tirageLoto\obj\Debug\tirageLoto.pdb

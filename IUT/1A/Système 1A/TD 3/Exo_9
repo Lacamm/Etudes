@@ -1,0 +1,24 @@
+.method max(a,b)
+ILOAD b
+ILOAD a
+ISUB
+IFLT lb1
+ILOAD a
+GOTO lb2
+lb1: ILOAD b
+lb2: IRETURN
+.end_method
+.method
+ILOAD a
+DUP
+DUP
+IADD
+IADD
+IRETURN
+.end-method
+.main
+.var
+a
+b
+.end-var
+BIPUSH

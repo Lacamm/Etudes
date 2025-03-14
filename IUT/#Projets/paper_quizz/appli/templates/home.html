@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block styles %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+{% endblock %}
+
+{% block main %}
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-3">{{ title }}</h1>
+      <p>Que vous soyez professeur ou élève, venez enseigner votre savoir ou l'approfondir à travers de multiples quiz.<br> </p>
+      {% if current_user.is_authenticated %}
+        <p><a class="btn btn-primary btn-lg" href="/listeQuiz" role="button">Accédez aux quiz &raquo;</a></p>
+      {% else %}
+        <p><a class="btn btn-primary btn-lg" href="/login" role="button">Vous connectez &raquo;</a></p>
+      {% endif %}
+    </div> 
+  </div>
+{% endblock %}

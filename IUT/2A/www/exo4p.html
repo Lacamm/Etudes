@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang='fr'>
+    <head>
+        <meta charset="UTF-8">
+        <link rel='stylesheet' href='stylep.css'>
+        <title>Formulaire</title>
+    </head>
+    <body>
+        <h1>Quizz</h1>
+    <form action="reponsep.php" method="POST">
+        <div class="formulaire">
+            <div class="gauche">
+                <p>Entrez votre nom:</p>
+                <input type="text" id="lenom" name="lenom" value="Nom">
+            </div>
+        <div>
+            <p>Entrez votre adresse mail:</p>
+            <input type="email" id="mail" name="mail" value="">
+        </div>
+            <br/>
+            <br/>
+            <div>
+                <div>
+                    <div>
+                        <span class="chiffres">Question 1: </span>
+                    </div>
+
+                    <div class="question">
+                        Quelle est la peur d'être constipé ?
+                    </div>
+                    <br/>
+                    <div>
+                        <input type="checkbox" id="Apopathodiaphulatophobie" name="Apopathodiaphulatophobie">L'Apopathodiaphulatophobie
+                        <input type="checkbox" id="Hexakosioihexekontahexaphobie" name="Hexakosioihexekontahexaphobie">L'Hexakosioihexekontahexaphobie
+                        <input type="checkbox" id="JustinBieberphobie" name="JustinBieberphobie">La JustinBieberphobie
+                    </div>
+                    <br/>
+                </div>
+                <div>
+                        <div>
+                            <span class="chiffres">Question 2: </span>
+                        </div>
+    
+                        <div class="question">
+                            Quel est le meilleur jeu ?
+                        </div>
+                        <br/>
+                        <div>
+                            <input type="radio" id="Angry_birds" name="Jeux" value="Angry_birds">Angry Birds
+                            <input type="radio" id="Bugdom" name="Jeux" value="Bugdom">Bugdom
+                            <input type="radio" id="Bubsy_3D" name="Jeux" value="Bubsy_3D">Bubsy 3D
+                        </div>
+                        <br/>
+                    </div>
+                <input type="submit" name="validation" value="Validez">
+            </div>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+header ul li{  border-collapse: collapse;
+  margin: 10px;
+  font-size: 2em;
+  float:left;
+}
+a{text-decoration: none;
+color: black;}
+  nav{border: 3px solid black;
+  margin: 10px;
+padding-bottom:40px;
+border-radius: 20px 20px 20px 20px;}
+header ul {
+ list-style-type:none;
+ margin-bottom:50px;}
+ article{margin-top: 20px;}
+ article ul{display: flex;
+ flex-wrap: wrap;
+ }
+ article ul li {list-style-type:none;
+    flex: 0 0 20%;
+ width: 20%;}
+ article ul li:hover { transform: scale(1.2); }
+.xmens{background-color: green ;}
+.avengers{background-color: green ;}
+.bad_guy{background-color: green ;}
+.gardians{background-color: green ;}

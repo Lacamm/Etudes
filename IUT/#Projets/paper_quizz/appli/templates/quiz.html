@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block styles %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='quizz.css') }}">
+{% endblock %}
+
+{% block main %}
+    <h1>{{ titre_quizz }}</h1>
+    <h2>Responsables</h2>
+    {% for nom in resp_quizz %}
+    <p>{{ nom }}</p>
+    {% endfor %}
+    <div>
+        <p>
+            Début du QCM le {{ datedebut_quizz }}
+            Fin du QCM le {{ datefin_quizz }}
+        </p>
+    </div>
+    <div>
+        <p>
+            Noté sur /{{ pointsmax_quizz }}
+            {{ nbquestions_quizz }} questions
+            Temps limite du quizz : {{ temps_quizz }}
+        </p>
+    </div>
+{% endblock %}

@@ -1,0 +1,9 @@
+Q.10 : Dans le code ci-dessus il y a deux boucles. Laquelle vous semble la plus facile à paralléliser ? Quel est le rôle des variables `amin`, `amax` et `arange` ?
+
+La 2 eme
+
+amin : coordonnée
+amax : coordonnée
+arange : moyenne
+
+

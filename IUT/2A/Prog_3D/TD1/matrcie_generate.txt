@@ -1,0 +1,14 @@
+# Matrice de la transformation qui réqui de moitié
+
+# M = 
+# 0.5     0
+# 0       0.5
+
+# M * (X,Y) => (0.5X,0.5Y)
+
+# Matrice qui ratatine selon X
+
+# M = 
+# 0.5      0
+# 0        1		
+

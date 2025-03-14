@@ -1,0 +1,15 @@
+#section1{
+    width: 10cm;
+    padding-bottom: 1cm;
+    margin-top: 0.5cm;
+}
+#p1{
+    width: 50%;
+    height: 1cm;
+    padding-bottom: 1cm;
+}
+#p2{
+    width: 50%;
+    height: 1.5cm;
+    padding-right: 1cm;
+}

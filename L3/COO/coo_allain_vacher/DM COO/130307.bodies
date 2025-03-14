@@ -1,0 +1,3 @@
+class FabriqueAssasin
+!!!149379.java!!!	creerPersonnage(in nom : String) : Personnage
+        return new Assassin(nom);

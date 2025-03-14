@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Exemple PHP</title>
+        <link rel="stylesheet" type="text/css" href ="style.css">
+    </head>
+    <body>
+        <h1>Quizz de culture générale</h1>
+        <form action="reponse2.php" method="post">
+            <p>Entrez votre nom :</p>
+            <input class="inputtext" type="text" id="lenom" name="lenom" value="nom">
+            <div>
+                <div>
+                    <div>
+                        <span class="chiffres">1</span>
+                    </div>
+
+                    <div class="question">
+                        Laquelle de ces réponses est le nom d'un petit oiseau d'Europe ?
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="zigoui" name="zigoui">Les zigouigoui
+                        <input type="checkbox" id="zigou" name="zigou">La zigounette
+                        <input type="checkbox" id="zizi" name="zizi">le zizi
+                    </div>
+                    <br />
+                </div>
+                <div>
+                    <div>
+                        <span class="chiffres">2</span>
+                    </div>
+
+                    <div class="question">
+                        Lequel de ces pays a un drapeau composé de 3 mêmes couleurs que celui de la France ?
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="Norvege" name="Norvege">La Norvege
+                        <input type="checkbox" id="Finlande" name="Finlande">La Finlande
+                        <input type="checkbox" id="Danemark" name="Danemark">Le Danemark
+                    </div>
+                    <br />
+                </div>
+                <div>
+                    <div>
+                        <span class="chiffres">3</span>
+                    </div>
+
+                    <div class="question">
+                        Quel prénom masculin a été le plus donné en 2015 par les français ?
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="Guillaume" name="Guillaume">Guillaume
+                        <input type="checkbox" id="Dylan" name="Dylan">Dylan
+                        <input type="checkbox" id="Leo" name="Leo">Leo
+                    </div>
+                    <br />
+                </div>
+                <div>
+                    <div>
+                        <span class="chiffres">4</span>
+                    </div>
+
+                    <div class="question">
+                        Quelle est la capitale du Japon ?
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="Tokyo" name="Tokyo">Tokyo
+                        <input type="checkbox" id="Shangai" name="Shangai">Shangai
+                        <input type="checkbox" id="Pékin" name="Pékin">Pékin
+                    </div>
+                    <br />
+                </div>
+                <div>
+                    <div>
+                        <span class="chiffres">5</span>
+                    </div>
+
+                    <div class="question">
+                        Quel est le vrai nom de Johnny Hallyday ?
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="Philippe" name="Philippe">Jean-Philippe Smet
+                        <input type="checkbox" id="Pierre" name="Pierre">Jean-Pierre Smet
+                        <input type="checkbox" id="Marie" name="Marie">Jean-Marie Smet
+                    </div>
+                    <br />
+                </div>
+                <div>
+                    <div>
+                        <span class="chiffres">6</span>
+                    </div>
+
+                    <div class="question">
+                        Le 28 janvier 1939, combien de morts le tremblement de terre de magnitude 8, 3 a-t-il fait au Chili ?
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="39" name="39">39 000 victimes
+                        <input type="checkbox" id="28" name="28">28 000 victimes
+                        <input type="checkbox" id="17" name="17">17 000 victimes
+                    </div>
+                    <br />
+                </div>
+                <div>
+                    <div>
+                        <span class="chiffres">7</span>
+                    </div>
+
+                    <div class="question">
+                        Orange est une commune française de/d'...
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="Vaucluse" name="Vaucluse">Vaucluse
+                        <input type="checkbox" id="Alpes" name="Alpes">Alpes-de-Haute-Provence
+                        <input type="checkbox" id="Bouches" name="Bouches">Bouches-du-Rhône
+                    </div>
+                    <br />
+                </div>
+                <div>
+                    <div>
+                        <span class="chiffres">8</span>
+                    </div>
+
+                    <div class="question">
+                        Ariane, Golden, Gala, Reine des reinettes sont des variétés de...
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="Poires" name="Poires">Poires
+                        <input type="checkbox" id="Citrons" name="Citrons">Citrons
+                        <input type="checkbox" id="Pommes" name="Pommes">Pommes
+                    </div>
+                    <br />
+                </div>
+                <div>
+                    <div>
+                        <span class="chiffres">9</span>
+                    </div>
+
+                    <div class="question">
+                        Quelles couleurs faut-il mélanger pour obtenir du rose ?
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="blanc" name="blanc">Rouge et blanc
+                        <input type="checkbox" id="jaune" name="jaune">Rouge et jaune
+                        <input type="checkbox" id="violet" name="violet">Blanc et violet
+                    </div>
+                    <br />
+                </div>
+                <div>
+                    <div>
+                        <span class="chiffres">10</span>
+                    </div>
+
+                    <div class="question">
+                        Quelle était la déesse de l'amour chez les grecs de l'Antiquité ?
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="Vénus" name="Vénus">Vénus
+                        <input type="checkbox" id="Aphrodite" name="Aphrodite">Aphrodite
+                        <input type="checkbox" id="Athéna" name="Athéna">Athéna
+                    </div>
+                    <br />
+                    <input type="submit" name="validation" value="valider">
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

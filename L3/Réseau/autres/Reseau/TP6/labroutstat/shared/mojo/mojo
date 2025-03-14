@@ -1,0 +1,15 @@
+cp /shared/etc/default/* /etc/default/
+chown -R quagga:quagga /etc/quagga
+list=()
+while IFS= read -r line
+do list+=("$line")
+done < /etc/resolv.conf
+umount /etc/resolv.conf
+for line in "${list[@]}"
+do echo $line >> /etc/resolv.conf
+done 
+umount /etc/hosts
+cp /shared/etc/hosts /etc/hosts
+for eth in $(ip -br a | grep '^eth' | cut -d@ -f1); do
+    ip link set $eth address $(/shared/mojo/macaddr $HOSTNAME $eth)
+done

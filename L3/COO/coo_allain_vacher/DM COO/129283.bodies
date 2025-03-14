@@ -1,0 +1,10 @@
+class Contexte
+!!!143235.java!!!	Contexte(in monJeu : Jeu)
+        this.monJeu = monJeu;
+        this.etat_courant = new CreationPersonnage();
+!!!143363.java!!!	getMonJeu() : Jeu
+ return this.monJeu;
+!!!143491.java!!!	getEtat_courant() : EtatJeu
+return this.etat_courant;
+!!!143619.java!!!	set_etat_courant(in etat : EtatJeu) : void
+this.etat_courant = etat;

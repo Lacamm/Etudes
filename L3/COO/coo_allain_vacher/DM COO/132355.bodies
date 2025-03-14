@@ -1,0 +1,3 @@
+class Squelette
+!!!165507.java!!!	Squelette(in nom : String)
+        super(nom,10,6,4,2);

@@ -1,0 +1,84 @@
+# IUT d'Orléans | Département Informatique
+# Module Aide à la décision
+# Feuille de TP2
+
+# Ecrire vos réponses dans le fichier après chaque question et testez vos programmes au fur et à mesure dans la console
+
+# Le TP va s’organiser autour de l’exploration d’un jeu de données concernant le sommeil d’un ensemble de mammifères. Le jeu de données 'sleep' est disponible sur l’ENT au format .cvs.
+
+#------------------------------------------------------------------------------------
+# PARTIE 1 - Présentation et chargement du jeu de données
+#------------------------------------------------------------------------------------
+# Le tableau ci-dessous présente les 11 descripteurs (attributs) utilisés pour décrire les 62 mammifères (individus) :
+# ===============================================
+# Species        : Nom de l'espèce animale
+# Body Weight    : Poids du corps (en kg)
+# Brain Weight   : Poids du cerveau (en g)
+# Non Dreaming   : Temps moyen de sommeil non paradoxal (en h/j)
+# Dreaming       : Temps moyen de sommeil paradoxal (en h/j)
+# Sleep          : Temps moyen de sommeil (en h/j) NB. somme des deux attributs précédents
+# Lifespan       : Espérance de vie (en années)
+# Gestation      : Durée de gestation (en j)
+# Predation      : Indice d’exposition à la prédation (dans {1..5})
+# Sleep.exposure : Indice d’exposition durant le sommeil (dans {1..5})
+# Endangered     : Espèce menacée (indice dans {1..5})
+# ===============================================
+# Source : Ces données proviennent de l’article “Sleep in Mammals: Ecological and Constitutional Correlates” by Allison, T. and Cicchetti, D. (1976), Science, November 12, vol. 194, pp. 732-734.
+# Un jeu de données de ce type (indvidus × attributs) se charge en R dans un data.frame dans R. C’est un tableau dans lequel chaque ligne contient une donnée et chaque colonne un attribut.
+
+# 1. Charger le fichier sleep.csv dans un objet R dénommé *sommeil* à l’aide de la commande read.csv() :
+Votre réponse
+
+# 2. Afficher dans R le contenu de l’objet sommeil (on évitera de le faire lorsque le jeu de données est trop volumineux).
+Votre réponse
+
+# 3. Utiliser les fonctions disponibles sur les data.frame (nrow(), ncol(), dim(), names(), summary()) pour afficher : les nombres d'individus et d'attributs, les noms des attributs ainsi que les statistiques descriptives élémentaires sur chacun des attributs.
+Votre réponse
+
+#------------------------------------------------------------------------------------
+# PARTIE 2 - Accès aux données
+#------------------------------------------------------------------------------------
+
+# 1. Afficher la valeur de l’attribut Dreaming pour toutes les données puis en omettant les valeurs manquantes (NA)
+Votre réponse
+
+# 2. Afficher le nom des espèces qui dorment moins de 4 heures par jour
+Votre réponse
+
+# 3. Afficher le nom de l’espèce qui a la plus grande espérance de vie.
+Votre réponse
+
+# 4. Afficher les valeurs de l’attribut Lifespan par ordre croissant. Puis afficher les noms des espèces par ordre croissant d'espérances de vie.
+Votre réponse
+
+
+#------------------------------------------------------------------------------------
+# PARTIE 3 - Analyse des données
+#------------------------------------------------------------------------------------
+# On va chercher à explorer visuellement les données à l’aide de graphiques.
+
+# 1. Utiliser la commande plot() pour visualiser la matrice de toutes les projections bi-dimensionnelles (scatter plot). Quels descripteurs semblent corrélés?
+Votre réponse
+
+# 2. Calculer de deux manières (rowMeans() et apply()) la moyenne des trois derniers indices, pour chaque espèce. Ajouter ce nouveau descripteur Avg.Danger au data.frame.
+Votre réponse
+
+# 3. Les plus petites espèces sont elles les plus menacées? Tracer un graphique pour observer ce phénomène.
+Votre réponse
+
+# 4. Les espèces les plus intelligentes (plus lourds cerveaux) sont elles les moins menacées?
+Votre réponse
+
+# Dans la fin du TP nous allons commencer à 'fouiller' les données en calculant quelques statistiques sur des aggrégations d'individus. Par exemple on souhaiterait voir si les espèces qui sont les plus exposées durant leur sommeil rêvent moins que les autres.
+
+# 5. Calculez la moyenne des taux de rêve (temps de rêve / temps de sommeil) pour les espèces ayant 1 comme indice d'exposition durant le sommeil. 
+Votre réponse
+
+# 6. Ecrire une fonction R *tauxReve(data,attribut,valeur)* renvoyant ce taux moyen pour une aggrégation d'individus déterminée par un nom d'*attribut* et une *valeur* (l'appel *tauxReve(sommeil,attribut='Sleep.exposure',valeur=1)* devrait vous renvoyer la valeur obtenue précédemment).
+Votre réponse
+
+# 7. Ecrire une instruction R vous renvoyant le vecteur des taux de rêve pour chaque valeur d'indice d'exposition durant le sommeil.
+Votre réponse
+
+# 8. Tracer le graphique (ligne brisée) correspondant au vecteur obtenu à la question précédente. Superposer (avec des couleurs différentes) deux autres lignes correspondant aux mêmes calculs sur les indices d’exposition à la prédation et de 'espèce menacée.
+Votre réponse

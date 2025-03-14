@@ -1,0 +1,5 @@
+__pycache__/*
+static
+.flaskenv
+templates/__pycache__/*
+../myapp.db

@@ -1,0 +1,69 @@
+
+.carte_list{
+	width: 100%;
+    display: flex;
+	flex-wrap: wrap;
+	/* background-color: yellow; */
+}
+
+.div_100{
+	/* flex: 2; */
+	flex: 0 0 100%;
+	display: flex;
+}
+
+.div_50{
+	flex: 0 0 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+	.carte_a{
+		border: 1px solid;
+		border-color: black;
+		flex:0 0 48%;
+		margin:1%;
+		/* background-color: green; */
+		color: black;
+	}
+
+	.double_carte{
+        flex: 100%;
+		background-color: lightblue;
+		justify-content: center;
+		text-align: center;
+		padding-top: 2%;
+		padding-bottom: 2%;
+		margin: 1%;
+	}
+
+		.full{
+			width: 100%;
+			height: 100%;
+			margin: 0%;
+			display: flex;
+		}
+
+			.left{
+				flex: 0 0 50%;
+				margin: 0%;
+				/* background-color: red; */
+			}
+			.right{
+				flex: 0 0 50%;
+				margin: 0%;
+				/* background-color: aquamarine; */
+				display: flex;
+				flex-wrap: wrap;
+			}
+				.top_right{
+					flex: 100%;
+					margin: 0%;
+				}
+				.bottom_right{
+					flex: 0 0 100%;
+					margin: 0%;
+					/* background-color: pink; */
+					display: block;
+					align-self: center;
+				}

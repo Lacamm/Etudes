@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tirageLoto", "tirageLoto\tirageLoto.csproj", "{A5E94C18-BEA7-4CE4-B761-ABD178961AB9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5E94C18-BEA7-4CE4-B761-ABD178961AB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5E94C18-BEA7-4CE4-B761-ABD178961AB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5E94C18-BEA7-4CE4-B761-ABD178961AB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5E94C18-BEA7-4CE4-B761-ABD178961AB9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8F95E5CC-EBE7-4236-91F5-E5817D1A8547}
+	EndGlobalSection
+EndGlobal

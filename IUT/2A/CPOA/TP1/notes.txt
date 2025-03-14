@@ -1,0 +1,8 @@
+Questions 3
+
+Les différentes classes, ainsi que leurs méthodes et attibuts affichés.
+La visibilté est respéctée.
+Oui.
+Oui.
+Oui.
+

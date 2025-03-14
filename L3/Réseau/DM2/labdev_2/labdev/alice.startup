@@ -1,0 +1,5 @@
+###### Pour l'exercice 1 afin de vérifier le routage de box
+###### ip addr add 10.22.20.130/28 dev eth0 // ip route add default via 10.22.20.129
+
+dhclient
+

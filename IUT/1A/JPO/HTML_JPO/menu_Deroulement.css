@@ -1,0 +1,67 @@
+#menu { /* Pour le menu principal */
+    list-style: none;
+    margin: 0em;
+    padding: 0em;
+}
+ #menu ul { /* Pour les sous-menus */
+    list-style: none;
+    margin: 0em;
+    padding: 0em;
+    text-align: center;
+    text-decoration: none;
+}
+#menu ul {
+    display: none;
+}
+
+#menu li {
+    display: inline-block;
+    position: relative;
+    border: thin black;
+    border-radius: 1em;
+    width: 17.5vw;
+
+}
+
+#menu a {
+    display: block;
+    height: auto;
+    padding: .5em 1em;
+    border-radius: 1em;
+    text-decoration: none;
+    text-align: center;
+}
+#menu li:hover ul {
+    display: block ;
+    position: absolute;
+}
+
+#menu ul a {
+    display: block;
+}
+
+#menu li {
+    background-color:  #7D037D; /* Couleur d'arriere-plan du menu */
+
+}
+#menu li a {
+    color: white; /* Couleur du texte du menu */
+}
+#menu li:hover {
+    background-color: #7D037D; /* Couleur d'arriere-plan du menu au survol */
+}
+#menu li:hover a {
+    color: white; /* Couleur du texte du menu au survol */
+}
+#menu ul li {
+    background-color: #7D037D; /* Couleur d'arriere-plan des sous-menu */
+}
+#menu ul li:hover {
+    background-color: #7D037D; /* Couleur d'arriere-plan des sous-menu au survol */
+}
+#menu ul li a {
+    color: #666; /* Couleur du texte des sous-menu */
+}
+#menu ul li:hover a {
+    color: #9999FF ; /* Couleur du texte des sous-menu au survol */
+}

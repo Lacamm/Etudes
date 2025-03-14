@@ -1,0 +1,1 @@
+android create project --target 1 --path td1/essai --name myApp --activity Essai --package fr.roza.android.essai --gradle --gradle-version 2.2.1

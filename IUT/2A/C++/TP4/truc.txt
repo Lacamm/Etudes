@@ -1,0 +1,10 @@
+template < typename T >
+class x
+{
+T a;
+public:
+T getA()
+{
+  return a;
+}
+};

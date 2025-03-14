@@ -1,0 +1,2 @@
+IFACE=eth0 /lib/ifupdown/wait-for-ll6.sh
+dhclient -6 eth0

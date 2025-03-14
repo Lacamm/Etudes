@@ -1,0 +1,19 @@
+15
+max	pushv 0
+_	pop 0
+_	pop 1
+_	rdmem 1 2
+tst	cmp 2 0
+_	jeq fin
+blp	rdmem 1 3
+_	cmp 0 3
+_	jse elp
+_	pushr 3
+_	pop 0
+elp	inc 1
+_	dec 2
+_	jmp tst
+fin	ret 0
+2
+_	0
+_	0

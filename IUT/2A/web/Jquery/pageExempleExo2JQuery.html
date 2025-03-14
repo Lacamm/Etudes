@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="clair.css" />
+  <title>Selection de liens en JS</title>
+
+</head>
+
+<body>
+  <header>
+    <nav id="menu">
+      <ul>
+        <li> <a href="page1.html"> Page 1 </a> </li>
+        <li> <a href="page2.html"> Page 2 </a> </li>
+        <li> <a href="page3.html"> Page 3 </a> </li>
+        <li> <a href="page4.html"> Page 4 </a> </li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <article class="my">
+      <div id="un">
+        Contenu Bla bla ...
+      </div>
+      <div id="deux">
+        Contenu Bli bli ...
+      </div>
+    </article>
+  </section>
+  <form>
+    <select id='langs'>
+      <option value="fr">Français</option>
+      <option value='en'>Anglais</option>
+      <option value='tb'>Tibétain</option>
+    </select>
+    <p> CP <input type="text" id="cp" size="5"> </p>
+  </form>
+  <button id="chgcss"> ChangeCSS </button>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script>
+  question1 = function () {
+    // tous les elts de la page
+    const all = $('*');
+    for (elt of all) console.log(elt);
+  };
+  question2 = function () {
+    const links = $('a');
+    for (elt of links)
+      console.log(elt);
+  };
+  question3 = function () {
+    const links = $('ul a').text(); // on récupère les textes des liens
+    console.log(links);
+    //for (elt of  links)
+    //console.log(elt);
+  };
+  question4 = function () {
+    const last = $('nav#menu li:last-child');
+    console.log(last[0]);
+  };
+  question5 = function () {
+    const article = $('article.my');
+    console.log(article[0]);
+  };
+  question6 = function () {
+    const div2 = $('article.my div:nth-child(2)').html();
+    console.log(div2);
+  };
+
+
+  $(document).ready(function () {
+    //question1();
+    question6();
+    //question3();
+    // changement dans le select
+    $('#langs').change(function () {
+      const item = $('#langs option:selected');
+      const texte = $(item).text();
+      const val = $(item).val();
+      alert("Vous avez selectionné " + texte + ' ' + val);
+    });
+    $("#cp").keyup(function (event) {
+      // Lecture du code postal
+      const cp = $(this).val();
+      // On teste que le code postal soit complet, c'est à dire qu'il contient 5 caractères
+      if (cp.length == 5) alert("Vous avez saisi: " + cp);
+    });
+  });
+</script>
+<script>
+  // exo4 jQuery
+  // changement dynamique de feuille de style
+  $('#chgcss').click(
+    function () {
+      if ($("link[rel=stylesheet]").attr('href') == 'clair.css')
+        $("link[rel=stylesheet]").attr('href', 'fonce.css');
+      else $("link[rel=stylesheet]").attr('href', 'clair.css');
+    });
+</script>
+
+</html>

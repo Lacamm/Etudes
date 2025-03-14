@@ -1,0 +1,18 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="alexstyle.css"/>
+    <script language="JavaScript">
+        function stateChange() {
+            setTimeout(function () {
+                var pathArray = window.location.pathname.split( "/" );
+                var pathnamerebuilt="";
+                for (let i=0;i<pathArray.length-1;i++) {
+                    pathnamerebuilt+= pathArray[i]+"/";
+                }
+                var url = window.location.protocol + "//" + window.location.host + pathnamerebuilt + "attendrechoixadversaire.action";
+                window.location.replace(url);
+            }, 4000);
+        }
+        stateChange()
+    </script>
+</head>

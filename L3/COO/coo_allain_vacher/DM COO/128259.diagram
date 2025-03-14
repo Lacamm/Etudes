@@ -1,0 +1,130 @@
+format 224
+
+classcanvas 128003 class_ref 129027 // Boutique
+  classdiagramsettings member_max_width 0 end
+  xyzwh 1185.5 407.3 2000 74 39
+end
+classcanvas 128131 class_ref 129155 // EtatJeu
+  classdiagramsettings member_max_width 0 end
+  xyz 863.2 16.9 2006
+end
+classcanvas 128387 class_ref 129283 // Contexte
+  classdiagramsettings member_max_width 0 end
+  xyz 541.1 115.4 3005
+end
+classcanvas 128643 class_ref 129667 // Evenement
+  classdiagramsettings member_max_width 0 end
+  xyz 16.2 19.3 3011
+end
+classcanvas 128899 class_ref 129539 // Combat
+  classdiagramsettings member_max_width 0 end
+  xyz 1095.7 411.9 2012
+end
+classcanvas 129155 class_ref 129923 // CreationPersonnage
+  classdiagramsettings member_max_width 0 end
+  xyz 1272.8 401.7 2012
+end
+classcanvas 129795 class_ref 132099 // Menu
+  classdiagramsettings member_max_width 0 end
+  xyz 1367.3 346.6 2000
+end
+classcanvas 130179 class_ref 131715 // InterieurDonjon
+  classdiagramsettings member_max_width 0 end
+  xyz 1251.1 472.6 2000
+end
+classcanvas 130563 class_ref 129795 // Jeu
+  classdiagramsettings member_max_width 0 end
+  xyz 7.9 353 2000
+end
+classcanvas 131331 class_ref 130051 // Donjon
+  classdiagramsettings member_max_width 0 end
+  xyz 754.1 620.1 2000
+end
+classcanvas 133251 class_ref 130179 // Piece
+  classdiagramsettings member_max_width 0 end
+  xyz 1116.2 643.9 2000
+end
+classcanvas 133891 class_ref 131843 // Marchand
+  classdiagramsettings member_max_width 0 end
+  xyz 652.3 378.7 3005
+end
+classcanvas 137091 class_ref 132483 // InterfaceJeu
+  classdiagramsettings member_max_width 0 end
+  xyz 572.7 769 2000
+end
+relationcanvas 128259 relation_ref 128899 // <realization>
+  from ref 128003 z 2007 to ref 128131
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128771 relation_ref 129155 // <realization>
+  from ref 128387 z 3012 to ref 128643
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129027 relation_ref 129027 // <realization>
+  from ref 128899 z 2013 to ref 128131
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129283 relation_ref 129539 // <realization>
+  decenter_begin 417
+  from ref 129155 z 2013 to ref 128131
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129923 relation_ref 132867 // <realization>
+  from ref 129795 z 2007 to ref 128131
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 130307 relation_ref 131203 // <realization>
+  from ref 130179 z 2007 to ref 128131
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 130691 relation_ref 131715 // <realization>
+  from ref 130563 z 3012 to ref 128643
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 133379 relation_ref 135043 // <aggregation>
+  from ref 131331 z 2001 to ref 133251
+  role_a_pos 1048 727 3000 no_role_b
+  multiplicity_a_pos 1093 753 3000 no_multiplicity_b
+end
+relationcanvas 136451 relation_ref 136195 // <association>
+  from ref 130563 z 3006 to ref 133891
+  role_a_pos 559 490 3000 no_role_b
+  multiplicity_a_pos 630 515 3000 no_multiplicity_b
+end
+relationcanvas 137347 relation_ref 136067 // <association>
+  from ref 128387 z 3006 to ref 128131
+  no_role_a role_b_pos 793 141 3000
+  no_multiplicity_a multiplicity_b_pos 793 167 3000
+end
+relationcanvas 137603 relation_ref 136451 // <association>
+  from ref 137091 z 2001 to ref 130563
+  no_role_a role_b_pos 520 721 3000
+  no_multiplicity_a multiplicity_b_pos 551 778 3000
+end
+relationcanvas 138371 relation_ref 143107 // <association>
+  decenter_begin 856
+  decenter_end 300
+  from ref 128387 z 3006 to ref 130563
+  role_a_pos 439 433 3000 no_role_b
+  multiplicity_a_pos 446 487 3000 no_multiplicity_b
+end
+relationcanvas 138755 relation_ref 143235 // <association>
+  decenter_begin 80
+  decenter_end 263
+  from ref 130563 z 3006 to ref 128387
+  role_a_pos 611 214 3000 no_role_b
+  multiplicity_a_pos 576 214 3000 no_multiplicity_b
+end
+relationcanvas 139267 relation_ref 143363 // <aggregation>
+  from ref 130563 z 2001 to ref 131331
+  role_a_pos 673 667 3000 no_role_b
+  multiplicity_a_pos 731 720 3000 no_multiplicity_b
+end
+end

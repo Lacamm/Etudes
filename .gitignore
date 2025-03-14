@@ -1,0 +1,13 @@
+__pycache__/
+bin/
+build/
+cache/
+vendor/
+var/
+libraries/
+
+.class
+.vs
+.vscode
+.o
+.flaskenv

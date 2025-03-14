@@ -1,0 +1,51 @@
+format 224
+
+classcanvas 128003 class_ref 128515 // Personnage
+  classdiagramsettings member_max_width 0 end
+  xyz 28.0025 20.9889 2000
+end
+classcanvas 128131 class_ref 128771 // Inventaire
+  classdiagramsettings member_max_width 0 end
+  xyz 56.0057 381.096 2006
+end
+classcanvas 129027 class_ref 128131 // Objet
+  classdiagramsettings member_max_width 0 end
+  xyz 540.82 265.98 2000
+end
+classcanvas 129283 class_ref 128003 // Amelioration
+  classdiagramsettings member_max_width 0 end
+  xyz 954.15 125.36 2000
+end
+classcanvas 129411 class_ref 131203 // Forger
+  classdiagramsettings member_max_width 0 end
+  xyz 794.11 30.89 2000
+end
+relationcanvas 128899 relation_ref 133891 // <association>
+  from ref 128003 z 2007 to ref 128131
+  role_a_pos 247 374 3000 no_role_b
+  multiplicity_a_pos 213 374 3000 no_multiplicity_b
+end
+relationcanvas 129539 relation_ref 128131 // <generalisation>
+  from ref 129283 z 2001 to ref 129027
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129795 relation_ref 130691 // <generalisation>
+  from ref 129411 z 2001 to ref 129283
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 130435 relation_ref 134147 // <aggregation>
+  from ref 128131 z 2007 to ref 129027
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 130563 relation_ref 142979 // <association>
+  decenter_begin 187
+  decenter_end 140
+  from ref 128003 z 2007 to ref 128131
+  no_role_a role_b_pos 132 280 3000
+  no_multiplicity_a multiplicity_b_pos 100 280 3000
+end
+preferred_whz 0 0 0.99
+end

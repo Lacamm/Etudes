@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <title>Eval3</title>
+<link rel="stylesheet" href="planetes_2018.css"/>
+</head>
+
+<body>
+  <header>
+    <h1>Planètes de la galaxie</h1>
+    <img src="Star_Wars_Logo.png"/>
+  </header>
+  <div>
+    <main>
+      <section>
+        <h2>Les planètes dont le nom commencent par un A</h2>
+        <table>
+          <tr>
+            <thead>
+              <th>Nom</th>
+              <th>Localisation</th>
+            </thead>
+            <tbody>
+              {% for nom,localisation in A %}
+                <tr>
+                <td>{{nom}}</td>
+                <td>{{localisation}}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </tr>
+        </table>
+      </section>
+
+      <section>
+        <h2>La liste des planètes sur lesquelles on peut trouver des humains</h2>
+        <ul>
+          {% for nom in humains %}
+          <li>{{nom}}</li>
+          {% endfor %}
+        </ul>
+      </section>
+
+      <section>
+        <h2>Les planètes des Mondes du Noyau</h2>
+        <table>
+          <thead>
+            <th>Nom</th>
+            <th>Localisation</th>
+            <th>Espèces intelligentes</th>
+          </thead>
+          <tbody>
+            {% for nom, localisation, especes in mondes_noyau %}
+              <tr>
+                <td>{{nom}}</td>
+                <td>{{localisation}}</td>
+                <td>{{especes}}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </section>
+
+    </main>
+  </div>
+
+  <aside>
+    <h2>Les différentes localisations</h2>
+    <ul>
+      {% for nom in lieux %}
+      <li>{{nom}}</li>
+      {% endfor %}
+    </ul>
+  </aside>
+  <footer>
+    <p>Document numériques - Evaluation</p>
+  </footer>
+</body>
+</html>

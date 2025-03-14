@@ -1,0 +1,7 @@
+useradd -ms /bin/bash -p $(openssl passwd -6 bob) bob
+ip addr add 213.186.33.5/24 dev eth1
+ip addr add 10.0.2.2/8 dev eth0
+source /shared/rezotrick
+/etc/init.d/bind start
+/etc/init.d/postfix start
+/etc/init.d/dovecot start

@@ -1,0 +1,3 @@
+class Barbare
+!!!134915.java!!!	Barbare(in nom : String)
+        super(nom,15,5,1,2);

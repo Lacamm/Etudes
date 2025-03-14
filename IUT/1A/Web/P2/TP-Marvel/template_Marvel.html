@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang='fr'>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Personnages de Marvel</title>
+        <link rel='stylesheet' href='../css-Marvel.css'/>
+    </head>
+    <body>
+        <header >
+            <h1>{{titre}} </h1>
+        </header>
+        <ul>
+            {% for (nom , image ) in les_perso %}
+            <li>
+            <h3 >{{nom}} </h3>
+            <img src="{{repertoire}}{{image}}"/>
+            </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>

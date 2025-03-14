@@ -1,0 +1,92 @@
+1
+ajout action dans __init__.py
+LightOnWithAction
+ajout de cette action dans les imports 
+
+2
+ajoute Action3 dans les imports de light
+import un nouvel évennement LightOnWithevent
+on crée une nouvelle classe LightOnWithAction
+
+class LightOnWithAction(Action3):
+	Event = LightOnWithEvent
+	ACTION = "light-on-with"
+	RESOLVE_OBJECT = "resolve_for_operate"
+	RESOLVE_OBJECT2 = "resolve_for_use"
+
+3
+Ajout de LightOnWithAction dans __init__.py de action
+
+4
+Dans light.py de event on defini une nouvelle classe
+
+class LightOnWithEvent(Event3):
+	NAME = "light-on-with"
+	
+	def perform(self):
+		if not (self.object.has_prop("lightable-with")) and self.object2.has_prop("lighter"):
+			self.fail()
+			return self.inform("light-on-with.failed")
+		self.inform("light-on-with")
+
+5
+ajout import dans __init__.py de event
+
+6
+ajout des objets
+
+
+---
+id: flambeau-000
+type: Thing
+props:
+  - lightable-with
+  - takable
+names   : flambeau
+events:
+  info:
+    actor:
+      - props: =flambeau-000:light-with
+        data : "Un flambeau qui est en feu."
+      - data : "Un flambeau éteint que vous pouvez allumer."
+  look:
+    actor:
+      - props: object:light-with
+        data : "Un flambeau en feu."
+      - data : "Un flambeau éteint."
+  light-on-with:
+    - props : object:light-with
+      actor : "Le flambeau est déjà allumée."
+    - actor : "Vous allumez votre flambeau."
+      observer: |
+        {{ actor.name }} allume son flambeau.
+      effects:
+        - type  : ChangePropEffect
+          modifs: object:light-with
+  light-off:
+    - props : -object:light-with
+      actor : "Le flambeau n'est pas en feu."
+    - actor : "Vous éteignez votre flambeau."
+      observer: |
+        {{ actor.name }} éteind son flambeau.
+      effects:
+        - type  : ChangePropEffect
+          modifs: -object:light-with
+---
+
+
+
+id: Salle-des-profs-000
+type: Location
+props: 
+  - moche
+events: 
+  info:
+    actor: "Salle des Profs"
+  look: 
+    actor: |
+      "Vous etes dans la salle des profs. C'est une pièce peu agréable et quelque chose d'important est caché dans le frigo"
+      
+
+
+faire diagramme d'objet

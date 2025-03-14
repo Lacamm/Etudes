@@ -1,0 +1,105 @@
+# IUT d'Orléans | Département Informatique
+# Module Aide à la décision
+# Feuille de TP1
+
+# Ecrire vos réponses dans le fichier après chaque question et testez vos instructions au fur et à mesure dans la console
+
+#-----------------------------
+# Exercice 1
+#-----------------------------
+# 1. Construire un vecteur *notes* contenant les notes suivantes : 12; 19.5; 14.
+notes<-c(12,19.5,14)
+
+# 2. Construire un vecteur *matieres* de même taille contenant le nom des matières associées aux notes, dansl’ordre : OMGL, AP, ASR.
+matieres<-c("OMGL","AP","ASR")
+
+# 3. Utiliser le vecteur *matieres* pour nommer les composantes du vecteur *notes* puis afficher *notes*
+names(notes)<-matieres ; notes
+
+# 4. Déterminer la moyenne des notes.
+mean(notes)
+
+# 5. Soit la pondération suivante des notes : OMGL:1, AP:2 et ASR:1,5 stockées dans un vecteur *poids*, calculez la moyenne pondérée des notes.
+poids<-c(1,2,1.5)
+weighted.mean(notes,poids)
+# solution bis : sum(notes*poids)/sum(poids)
+
+#-----------------------------
+# Exercice 2
+#-----------------------------
+# La fonction *runif()* génère des nombres pseudo-aléatoires depuis une distribution de probabilité uniforme. On va l’utiliser pour générer des vecteurs aussi grands que l’on veut. Ainsi, tapez : *vu<-runif(100)* et la variable *vu* contient un vecteur de 100 composantes dont la valeur a été tirée au hasard entre 0 et 1. Pour chacune des questions suivantes, écrire une instruction R.
+
+# 1. Quelle est la somme des composantes du vecteur *vu*?
+sum(vu)
+
+# 2. Combien, le vecteur *vu* a-t-il de composantes dont la valeur est supérieure strictement à 0.75?
+sum(vu>0.75)
+
+# 3. Quelle est la somme des composantes du vecteur *vu* dont la valeur est supérieure strictement à 0.5?
+sum(vu[vu>0.5])
+
+# 4. Quelle est la somme des éléments d’indice pair de *vu*?
+sum(vu[seq(2,length(vu),2)])
+
+# 5. Créer un vecteur *vs* de taille 50, dont la valeur de la composante *i* est la somme des composantes *2*i-1* et *2*i* de *vu*.
+vs<-vu[seq(2,length(vu),2)]+vu[seq(1,length(vu),2)]
+
+# 6. Combien le vecteur *vu* a-t-il de composantes dont la valeur est comprises entre 0.25 et 0.75?
+length(vu[vu>0.25 & vu<0.75])
+
+#-----------------------------
+# Exercice 3
+#-----------------------------
+# Dans cet exercice, prenez le temps de consulter l’aide des fonctions indiquées, ainsi que l’aide des fonctions suivantes : *mean*, *max*, *min*, *which.max*, *which.min*, *colMeans*, *colSums*.
+# Supposons que l’on dispose d’une matrice contenant les notes de 15 étudiants dans 3 matières. Nous avons vu la fonction *runif()* dans l’exercice 2, qui génère des nombres aléatoires suivant une loi uniforme. La distribution des notes d’une promo n’est jamais uniforme, mais plutôt gaussienne (la distribution des notes est centrée autour d’une note moyenne, plus on s’écarte de cette note moyenne, moins les notes sont probables)
+
+# 1. Créez une matrice (nulle) de 15×3. Donnez des noms de matières (OMGL, AP, ASR) aux colonnes et des noms d’étudiants aux lignes (etu1, etu2, ...).
+M<-matrix(0,15,3)
+colnames(M)<-c('OMGL','AP','ASR')
+rownames(M)<-paste('etu',as.character(seq(1,15)),sep='')
+# ou encore : rownames(M)<-paste0('etu',as.character(seq(1,15)))
+
+# 2. À l’aide de la fonction *rnorm()*, générez des notes d’OMGL centrées autour de 11. Visualisez la distribution obtenue avec la fonction *hist()*. Modifiez les paramètres de *rnorm()* pour obtenir une distribution qui vous semble cohérente. Remplacez éventuellement les notes négatives par 0 et les notes supérieures à 20 par 20.
+omgl<-rnorm(15,11,10)
+hist(omgl) # pas de visualisation via repl.it
+omgl[omgl>20]<-20
+omgl[omgl<0]<-0
+
+# 3. Arrondissez les notes générées pour qu’elles soient soit entières, soit avec des 1/4, 1/2 ou 3/4 de points (voir par exemple les fonctions *trunc()* et *round()*)
+omgl<-trunc(omgl*4+0.5)/4 # arrondi au 1/4 de points
+omgl<-round(omgl)         # arrondi à l'entier le plus proche
+
+# 4. Générez des notes pour l’AP, en modifiant un peu les paramètres. Pour les notes d’ASR, faites en sorte que la distribution présente un “pic” autour de 8 et un pic autour de 12.
+ap<-rnorm(15,13,8)
+hist(ap) # pas de visualisation via repl.it
+ap[ap>20]<-20
+ap[ap<0]<-0
+ap<-trunc(ap*4+0.5)/4 # arrondi au 1/4 de points
+
+asr1<-rnorm(7,8,5)
+asr2<-rnorm(8,12,4)
+asr<-c(asr1,asr2)
+hist(asr) # pas de visualisation via repl.it
+asr[asr>20]<-20
+asr[asr<0]<-0
+asr<-trunc(asr*4+0.5)/4 # arrondi au 1/4 de points
+
+M[,'OMGL']<-omgl
+M[,'AP']<-ap
+M[,'ASR']<-asr
+
+# 5. Construisez un vecteur des coefficients des 3 matières (OMGL:1, AP:2, ASR:1.5).  Calculez la moyenne(pondérée) du 1er étudiant. Affichez la moyenne de chaque étudiant.
+poids<-c(1,2,1.5)
+weighted.mean(M['etu1',],poids)
+apply(M,1,weighted.mean,poids)    # à privilégier mais pas encore vu
+moy<-(M%*%matrix(poids,3,1)/sum(poids))[,1]  # à défaut
+names(moy)=colnames(M)
+
+# 6. Quel est le nom de l’étudiant ayant la meilleure moyenne? Supposons que plusieurs étudiants ont la moyenne maximum, affichez leurs noms.
+names(which.max(moy))
+names(which(moy==max(moy)))
+
+# 7. Quel est le nom de la matière pour laquelle la moyenne générale est la plus faible?
+names(which.min(colMeans(M)))
+
+

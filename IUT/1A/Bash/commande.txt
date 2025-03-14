@@ -1,0 +1,4 @@
+xscreensaver-command -lock ou xflock4 # verrouille session
+systemctl suspend -i # veille pc
+xmodmap -e "pointer = 3 2 1" # inverse contoles souris
+xinput enable/disable list # désactive le clavier

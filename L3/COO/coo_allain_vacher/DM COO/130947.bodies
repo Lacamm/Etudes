@@ -1,0 +1,3 @@
+class FabriquePaladin
+!!!150019.java!!!	creerPersonnage(in nom : String) : Personnage
+        return new Paladin(nom);

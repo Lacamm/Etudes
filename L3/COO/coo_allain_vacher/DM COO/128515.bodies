@@ -1,0 +1,54 @@
+class Personnage
+!!!132867.java!!!	Personnage(in nom : String, in vie : int, in force : int, in intelligence : int, in defense : int)
+    super(nom,vie,force,intelligence,defense);
+    Inventaire inventaire = new Inventaire(this);
+    this.monInventaire = inventaire.InventaireDepart();
+    this.argent = 10;
+!!!132995.java!!!	getMonInventaire() : Inventaire
+    return monInventaire;
+!!!133123.java!!!	setMonInventaire(inout monInventaire : Inventaire) : void
+    this.monInventaire = monInventaire;
+!!!133251.java!!!	afficherInventaire() : void
+    monInventaire.afficherInventaire();
+!!!133379.java!!!	equiperObjet(in nom_objet : String) : void
+monInventaire.equiper(nom_objet);
+!!!133507.java!!!	desequiperObjet(in nom_objet : String) : void
+monInventaire.desequiper(nom_objet);
+!!!133635.java!!!	jeterObjet(in nom_objet : String) : void
+ monInventaire.jeterObjet(nom_objet);
+!!!133763.java!!!	consommerObjet(in nom_objet : String) : void
+    monInventaire.consommeObjet(nom_objet);
+!!!133891.java!!!	afficherStats() : void
+    System.out.println("----------- Statistiques de " + this.getNom() + " -----------");
+    System.out.println("Classe : " + this.getClasse());
+    System.out.println("Vie : " + this.getVie() + "/" + this.getVieMax());
+    System.out.println("Force : " + this.getForce());
+    System.out.println("Intelligence : " + this.getIntelligence());
+    System.out.println("Défense : " + this.getDefense());
+    System.out.println("------------------------------------------" + "\n");
+!!!134019.java!!!	upgradeStats(inout objet : Objet) : void
+    if(this.getVie() == this.getVieMax())
+    {
+      this.setVie(this.getVie() + objet.getPv());
+      this.setVieMax(this.getVie());
+    }
+    else
+      this.setVieMax(this.getVieMax() + objet.getPv());
+    this.setForce(this.getForce() + objet.getAttaque());
+    this.setDefense(this.getDefense() + objet.getDefense());
+!!!134147.java!!!	downgradeStats(inout objet : Objet) : void
+    if(objet.getPv() != 0)
+    {
+      this.setVie(this.getVie() - objet.getPv());
+      this.setVieMax(this.getVie());
+    }
+    this.setForce(this.getForce() - objet.getAttaque());
+    this.setDefense(this.getDefense() - objet.getDefense());
+!!!134275.java!!!	getArgent() : int
+    return argent;
+!!!134403.java!!!	setArgent(in argent : int) : void
+    this.argent = argent;
+!!!134531.java!!!	equiperObjetA(in nom_objet : String) : void
+monInventaire.equiperA(nom_objet);
+!!!134659.java!!!	desequiperObjetA(in nom_objet : String) : void
+monInventaire.desequiperA(nom_objet);

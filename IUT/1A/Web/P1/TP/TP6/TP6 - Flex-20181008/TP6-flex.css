@@ -1,0 +1,17 @@
+/* TODO */
+p, section, article, header, h1{
+    border: 2px black solid;
+}
+
+p, em, strong{width: 50%;}
+
+body{display: flex;}
+body{flex-wrap: wrap;}
+
+#jaune{flex: 1 1 70%;}
+
+#gris{flex: 1 1 100%;}
+
+#rose{flex: 1 1 100%}
+
+#vert{flex:1 1 20%}

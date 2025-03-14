@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8"/>
+	<title>Pagination</title>
+  <link rel ="stylesheet" href="Marvel.css"/>
+</head>
+<body>
+	<header>
+		<h1>{{titre}}</h1>
+		<nav><h2>Menu</h2>
+		<ul>
+      {% for nomg in tout_nom %}
+  		<li>
+				<a {% if titre == nomg %} class={{titre}} {% endif %}  href="{{nomg}}">{{nomg}} </a>
+			</li>
+  		{% endfor %}
+  </ul></nav>
+	</header>
+	<article>
+		<h2>Liste Des Personnages</h2>
+		<ul>
+				{% for (nom,image) in les_perso %}
+				<li>
+					<h3>{{nom}}</h3>
+					<img src="{{image}}"
+					alt ="image marvel"/>
+				</li>
+				{% endfor %}
+			</ul>
+		</article>
+</body>
+</html>

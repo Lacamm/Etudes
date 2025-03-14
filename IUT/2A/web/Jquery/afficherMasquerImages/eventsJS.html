@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Affichage/masquage d'images en JS</title>
+</head>
+
+<body>
+  <ul>
+    <li><img src="carreBleu.jpg" alt="Carre Bleu" /></li>
+    <li><img src="carreJaune.png" alt="Carre Jaune" /></li>
+  </ul>
+  <input id="show" type="button" value="Tout afficher"/>
+</body>
+<script>
+  window.onload = function () {
+    var images = document.getElementsByTagName("img");
+    //On ajoute un event handler à chaque elt
+    // à la manière de Java
+    for (image of images) {
+      image.addEventListener("click", cache, false);
+    }
+
+    // Fonction qui gère l'évènement
+    function cache(event) {
+      event.target.style.visibilty = "hidden";
+    }
+
+    const show = document.getElementById("show");
+    show.addEventListener("click", decache, false);
+
+    function decache(event){
+      for (image of images){
+        image.style.visibilty = "visible";
+      }
+    }    
+  };
+  
+</script>
+
+</html>

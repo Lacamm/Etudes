@@ -1,0 +1,16 @@
+window_sizes 1366 719 320 1040 666 0
+cleanlooks_style
+diagrams
+  classdiagram_ref 128003 // PNJ
+    763 477 80 A0 0 27
+  classdiagram_ref 128131 // Inventaire
+    120 106 79 A0 0 0
+  active  classdiagram_ref 128259 // Jeu
+    1040 666 70 A0 0 0
+end
+show_stereotypes
+selected classview_ref 128003 // DM COO
+open
+  classview_ref 128003 // DM COO
+end
+end

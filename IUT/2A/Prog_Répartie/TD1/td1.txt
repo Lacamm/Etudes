@@ -1,0 +1,51 @@
+Exo 1
+
+1) 
+
+1	1	a	a	1	a
+2	a	b	1	a	1	
+a	2	1	b	b	2
+b	b	2	2	2	b
+
+2)
+
+Pareil
+
+3)
+
+1	1
+2	a
+a	x
+b	2
+x	b
+
+tout entrelacement possibles, 2 aprés 1 et b après a sinon tout les ordres
+
+Exo 2
+
+1) 8 multi
+
+m1 de taille [n,n]
+m2 de taille [n,n]
+
+calcul premiere valeur
+calcul deuxieme valeur
+calcul troisième valeur
+calcul quatrieme valeur
+
+2) 2 multi par case
+
+4 multi par colonnes
+
+m1 de taille [n,n]
+m2 de taille [n,n]
+
+thread 1
+thread 2
+
+calcul premiere valeur : thread 1
+calcul deuxieme valeur : thread 2
+calcul troisième valeur : thread 1
+calcul quatrieme valeur : thread 2
+
+3) 2* +rapide

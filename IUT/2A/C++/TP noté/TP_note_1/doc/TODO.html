@@ -1,0 +1,91 @@
+<h1 id="sujet-tp-noté">Sujet TP noté</h1>
+<p>Le fichier <code>test.cpp</code> contient du code qui doit être fonctionnel. Ce code fait appel aux types suivants :</p>
+<ul>
+<li><code>vml::vec3f</code> : un vecteur contenant 3 <code>float</code> (code donné),</li>
+<li><code>vml::vec4f</code> : un vecteur contenant 4 <code>float</code> (à compléter),</li>
+<li><code>vml::mat4x4f</code>: une matrice de dimensions 4x4 (à compléter), constituée de 4 vecteurs de type <code>vml::vec4f</code>, un vecteur représentant une colonne de la matrice.</li>
+</ul>
+<p>Il est proposé de découper le travail en 4 étapes (Step 1, …) à décommenter progressivement. Il est conseillé de réfléchir avant de coder, notamment sur les opérateurs sur les matrices de manière à réutiliser au maximum les opérateurs déjà écrits. Par exemple, la multiplication d’une matrice par un vecteur peut réutiliser la multiplication d’un vecteur par une valeur de type <code>float</code>. De même, la multiplication de 2 matrices peut réutiliser la multiplication d’une matrice par un vecteur.</p>
+<p>À partir de ces classes, on pourra définir des opérations de transformations géométriques : translation et rotation (code donné) dans le fichier <code>transform.hpp</code>. On obtient ainsi une petite bibliothèque similaire au sous-ensemble de fonctions de la bibliothèque <code>glm</code> utilisée en OpenGL.</p>
+<p>Dans un second temps, il conviendra de déplacer des fonctions et méthodes dans des fichiers <code>.cpp</code>, dont la fonction <code>rotate</code> du fichier <code>transform.hpp</code>, les opérateurs <code>+</code> et <code>*</code> de la classe <code>vml::mat4x4f</code> et les opérateurs <code>&lt;&lt;</code> des autres classes. Une modification du fichier Makefile sera nécessaire pour compiler les nouveaux fichiers <code>.cpp</code> et générer le programme <code>test</code>.</p>
+<p>La sortie du programme complet doit être :</p>
+<pre><code>
+
+v0
+| 1 |
+| 2 |
+| 3 |
+| 4 |
+
+v1
+| 1 |
+| 1 |
+| 7.5 |
+| 1 |
+
+v1*3.0f
+| 3 |
+| 3 |
+| 22.5 |
+| 3 |
+
+v0*v1
+29.5
+v0
+| 2 |
+| 3 |
+| 10.5 |
+| 5 |
+
+m0
+| 0 0   0   0 |
+| 0 0   0   0 |
+| 0 0   0   0 |
+| 0 0   0   0 |
+
+m1
+| 1 0   0   0 |
+| 0 1   0   0 |
+| 0 0   1   0 |
+| 0 0   0   1 |
+
+m0
+| 2 0   0   0 |
+| 3 0   0   0 |
+| 10.5  0   0   0 |
+| 5 0   0   0 |
+
+m0
+| 2 0   0   0 |
+| 3 0   0   0 |
+| 10.5  7   0   0 |
+| 5 0   0   0 |
+
+v2
+| 4 |
+| 6 |
+| 42 |
+| 10 |
+
+m0 + m1
+| 3 0   0   0 |
+| 3 1   0   0 |
+| 10.5  7   1   0 |
+| 5 0   0   1 |
+
+m0 * m1
+| 4 0   0   0 |
+| 6 0   0   0 |
+| 21    14  0   0 |
+| 10    0   0   0 |
+
+r0*v3
+| 0.707107 |
+| -0.707107 |
+| 0 |
+| 1 |
+
+| 1.70711 |
+| -0.707107 |
+| 0 |
+| 1 |</code></pre>

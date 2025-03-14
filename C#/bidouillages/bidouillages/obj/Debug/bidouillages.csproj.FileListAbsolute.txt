@@ -1,0 +1,7 @@
+C:\Users\LUCAS\source\repos\bidouillages\bidouillages\bin\Debug\bidouillages.exe.config
+C:\Users\LUCAS\source\repos\bidouillages\bidouillages\bin\Debug\bidouillages.exe
+C:\Users\LUCAS\source\repos\bidouillages\bidouillages\bin\Debug\bidouillages.pdb
+C:\Users\LUCAS\source\repos\bidouillages\bidouillages\obj\Debug\bidouillages.csprojAssemblyReference.cache
+C:\Users\LUCAS\source\repos\bidouillages\bidouillages\obj\Debug\bidouillages.csproj.CoreCompileInputs.cache
+C:\Users\LUCAS\source\repos\bidouillages\bidouillages\obj\Debug\bidouillages.exe
+C:\Users\LUCAS\source\repos\bidouillages\bidouillages\obj\Debug\bidouillages.pdb

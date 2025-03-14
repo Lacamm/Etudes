@@ -1,0 +1,29 @@
+body{
+    margin: 0%;
+}
+
+footer ,header{
+    background-color: black;
+}
+
+footer > p, header > h1{
+    color: yellow;
+}
+
+section{
+    background-color: grey;
+}
+
+aside{
+    background-color: grey; 
+}
+
+
+header > h1{
+    color: yellow;
+
+}
+
+header{
+    display: flex;
+}

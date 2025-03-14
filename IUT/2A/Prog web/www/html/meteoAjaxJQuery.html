@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Meteo Ajax avec Jquery</title>
+        <script src="js/jquery.min.js"></script>
+    </head>
+    <body>
+        <section>
+            cp: <input type="text" id="code_postal"
+        size="5" maxlength="5" placeholder="45000"
+        title="Entrez un code postal sur 5 chiffres"/>
+        </section>
+        <div id="meteo"></div>
+        <script> 
+        $(function(){
+            $('#code_postal').keyup(function(event){
+                let cp = $(this).val();
+                if (cp.length == 5){
+                    console.log(cp);
+                    $.ajax({
+                        // url du serveur
+                        url: "http://localhost/~roza/meteo/meteoAjaxJSON.php",
+                        // méthode HTTP
+                        type: "GET",
+                        // Données envoyées vers le serveur
+                        data: "cp="+cp,
+                        // Type de données attendu en retour
+                        dataType: "json",
+                        // en cas de succès
+                        // msg est la réponse du serveur
+                        success: function(msg){
+                            const date = msg['cp'];
+                            const jour = msg['jour'];
+                            const heure = msg['heure'];
+                            const meteo = msg['meteo'];
+                            message=date+" "+heure+" :"+meteo;
+                            $('div#meteo').text(message);
+                        },
+                        // en cas de pb
+                        error: function(req, status, err){
+                            const erreur=  err +" "+ status;
+                            $('div#meteo').text(erreur);
+                        }
+                    });
+                }
+            });
+        });
+        </script>
+
+    </body>
+</html>

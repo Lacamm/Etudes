@@ -1,0 +1,6 @@
+cd $HOME
+mv pinerc .pinerc
+ip addr add 80.8.0.50/24 dev eth0
+ip route add default via 80.8.0.1
+
+

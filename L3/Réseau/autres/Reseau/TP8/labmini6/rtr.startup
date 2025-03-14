@@ -1,0 +1,5 @@
+ip -6 route add 2001:ad38::/64 dev eth0
+ip -6 route add 2001:ad54::/64 dev eth1
+
+/etc/init.d/radvd start
+

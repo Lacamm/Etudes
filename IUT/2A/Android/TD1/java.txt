@@ -1,0 +1,38 @@
+[14:30] JULIEN ARSOUZE
+    
+public class MainActivity extends AppCompatActivity {​​​​​
+    @Override
+protected void onCreate(Bundle savedInstanceState) {​​​​​
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        Button b = findViewById(R.id.button1);
+        b.setOnClickListener(new View.OnClickListener() {​​​​​
+            @Override
+public void onClick(View view) {​​​​​
+                clickButton1(view);
+            }​​​​​
+        }​​​​​);
+    }​​​​​
+    public void showToast(String message){​​​​​
+        Toast toast = Toast.makeText(getApplicationContext(),
+                message,
+                Toast.LENGTH_LONG);
+        toast.setGravity(Gravity.TOP,0,0);
+        toast.show();
+    }​​​​​
+    public void clickButton1(View view) {​​​​​
+        EditText editText1 = findViewById(R.id.edit1);
+        EditText editText2 = findViewById(R.id.edit2);
+        String s1 = editText1.getText().toString();
+        String s2 = editText2.getText().toString();
+        if (s1.isEmpty() || s2.isEmpty()){​​​​​
+            showToast("info manquantes");
+        }​​​​​else{​​​​​
+            showToast("Calcul du resultat");
+            TextView textView =findViewById(R.id.tvResult);
+            textView.setText(s1+ " "+s2);
+        }​​​​​
+
+    }​​​​​
+}​​​​​
+<https://teams.microsoft.com/l/message/19:9b796986f01943d496698f808dc4a4e1@thread.tacv2/1611322213606?tenantId=967236d1-9003-4f1a-9556-8afe047945f1&amp;groupId=3eb4c95f-61e1-47a3-9ed4-29bb225d1d3d&amp;parentMessageId=1611319102995&amp;teamName=IUTo_ETU_Info_S4_2A3&amp;channelName=M4104C-Applications Mobiles&amp;createdTime=1611322213606>

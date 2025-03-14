@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block main %}
+<div class="card border-light" style="width:480px">
+        <div class="card-header">{{ album.title }}</div>
+        <a href="{{ album.url }}">
+                <img src="{{ url_for('static', filename='images/'+album.img) }}" alt="Couverture de {{ album.title }}"
+                        title="{{ album.title }}" class="card-img-top" />
+            <h2>{{ album.titre }}</h2>
+        </a>
+        <div class="card-body">
+                <h6 class="card-text card-footer">
+                        <p>Artiste : {{ album.author.name }}</p>
+                        <p>Année de sortie : {{ album.releaseYear }}</p>
+                </h6>
+                <iframe src="{{ album.spotify }}" width="500" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+</div>
+{% endblock %}

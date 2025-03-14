@@ -1,0 +1,22 @@
+Question 1:
+
+kepler.py
+planete.py
+
+Question 6:
+
+-p.satellites : list de planètes
+-p.satellites[1] : planètes (satellites)
+-p.satellites[2].satellites[3].satellites : list de satellites
+
+Question 14:
+
+etoile, planete,lune1, lune2, sonde, planete2, lune3, sonde2
+
+Question 17:
+
+sonde2, lune3, planete2, sonde, lune2, lune1, planete, etoile
+
+Question 19:
+
+etoile, planete, planete2, lune, lune2, lune3, sonde, sonde2

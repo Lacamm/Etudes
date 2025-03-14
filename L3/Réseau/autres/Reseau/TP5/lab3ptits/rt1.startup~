@@ -1,0 +1,5 @@
+ip addr add 10.1.0.254/16 dev eth0
+ip addr add 1.2.3.4/24 dev eth1
+ip route add default via 1.2.3.1
+/etc/init.d/isc-dhcp-server start
+iptables -t nat -A POSTROUTING -o eth1 -j SNAT --to 1.2.3.4

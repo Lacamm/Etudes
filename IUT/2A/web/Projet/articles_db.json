@@ -1,0 +1,67 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "contenu": "Bonjour tout le monde !",
+      "auteur": "jrobert"
+    },
+    {
+      "id": 2,
+      "contenu": "Le JS c'est super.",
+      "auteur": "jarsouze"
+    },
+    {
+      "id": 3,
+      "contenu": "Les API REST c'est quoi ?",
+      "auteur": "groza"
+    },
+    {
+      "id": 4,
+      "contenu": "Comment on fait des Promesses en JS ?",
+      "auteur": "jrobert"
+    },
+    {
+      "contenu": "Comment ça marche fetch et then ?",
+      "auteur": "jarsouze",
+      "id": 5
+    },
+    {
+      "contenu": "Rest pour tous",
+      "auteur": "Binh",
+      "id": 6
+    }
+    
+  ],
+  "commentaires": [
+    {
+      "id": 1,
+      "contenu": "Bonjour.",
+      "articleId": 1,
+      "auteur": "john"
+    },
+    {
+      "id": 2,
+      "contenu": "Quelle politesse.",
+      "articleId": 1,
+      "auteur": "jules"
+    },
+    {
+      "id": 3,
+      "contenu": "Oui, c'est super REST !",
+      "articleId": 2,
+      "auteur": "zorro"
+    },
+    {
+      "id": 4,
+      "contenu": "Super bien.",
+      "articleId": 4,
+      "auteur": "jimmy"
+    },
+    {
+      "id": 5,
+      "contenu": "Je me le demande..",
+      "articleId": 5,
+      "auteur": "johnny"
+    }
+  ]
+}

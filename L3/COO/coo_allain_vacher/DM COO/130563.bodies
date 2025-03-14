@@ -1,0 +1,3 @@
+class FabriqueGluant
+!!!149763.java!!!	creerPNJ(in nom : String) : PNJ
+        return new Gluant(nom);

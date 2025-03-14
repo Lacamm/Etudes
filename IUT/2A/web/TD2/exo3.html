@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Exo3</title>
+    </head>
+    <body>
+        <section>
+            <header>
+                <h1 id="titre1">Titre 1</h1>
+            </header>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+            </ul>
+        </section>
+        
+        <section>
+            <article>
+                <header>
+                    <h1 id="titre2">Autre Titre 1</h1>
+                </header>
+            </article>
+        </section>
+
+    </body>
+    <script>
+        // exos 3.2 , 3.3 et 3.4
+        let enfants = document.body.children
+        console.log(enfants.length)
+        for (enfant of enfants){ 
+            for (petitenfant of enfant.children) {
+                const texte = document.createTextNode(petitenfant.nodeName);
+                petitenfant.appendChild(texte)
+            } 
+        }
+        // 3.5        
+        const titre1 = document.getElementById('titre1')
+        console.log(titre1.parentElement/parentNode)
+
+        // 3.6
+        var titre1 = document.getElementById("titre1");
+        var titre2 = document.getElementById("titre2");
+
+        petitenfant.removeChild(titre1);
+        petitenfant.removeChild(titre2);
+
+        // 3.7 
+        // getElementById() => Element
+        // document.getElementsByTagName => liste d'éléments
+        // plusieurs elements peuvent avoir un même tag
+
+        //3.8
+        document.getElementsByTagName('section').getElementsByTagName('p')
+
+    </script>
+</html>

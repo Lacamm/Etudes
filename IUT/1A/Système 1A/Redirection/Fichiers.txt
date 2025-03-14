@@ -1,0 +1,12 @@
+aller.txt
+compte.sh
+Fichiers.txt
+nom.sh
+Opérations.sh
+rendExecutable.sh
+renommer2.sh
+renommer.sh
+test.sh
+toto.txt
+TP
+troislignes.sh

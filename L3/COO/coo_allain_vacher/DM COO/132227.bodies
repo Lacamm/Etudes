@@ -1,0 +1,3 @@
+class Paladin
+!!!163971.java!!!	Paladin(in nom : String)
+        super(nom,20,3,2,4);

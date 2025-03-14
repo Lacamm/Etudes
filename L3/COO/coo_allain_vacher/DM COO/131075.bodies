@@ -1,0 +1,3 @@
+class FabriqueSquelette
+!!!150147.java!!!	creerPNJ(in nom : String) : PNJ
+        return new Squelette(nom);

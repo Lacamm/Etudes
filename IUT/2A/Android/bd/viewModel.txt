@@ -1,0 +1,40 @@
+[17:44] JULIEN ARSOUZE
+    
+package com.example.room20202021.BD;
+import android.app.Application;
+import androidx.annotation.NonNull;
+import androidx.lifecycle.AndroidViewModel;
+import androidx.lifecycle.LiveData;
+import java.util.List;
+public class WordViewModel extends AndroidViewModel {​​​​​
+    private  WordRepository wordRepository;
+    private LiveData<List<Word>> allWords;
+    private LiveData<Integer> nbMotsLD;
+
+    
+    public WordViewModel(Application application) {​​​​​
+        super(application);
+        wordRepository = new WordRepository(application);
+        allWords = wordRepository.getAllWords();
+        nbMotsLD = wordRepository.getNbMotsLD();
+    }​​​​​
+    public LiveData<List<Word>> getAllWords() {​​​​​
+        return allWords;
+    }​​​​​
+    public LiveData<Integer> getNbMotsLD() {​​​​​
+        return nbMotsLD;
+    }​​​​​
+    public void insert(Word w){​​​​​
+        wordRepository.insert(w);
+    }​​​​​
+    
+    public void deleteAll(){​​​​​
+        wordRepository.deleteAll();
+    }​​​​​
+    
+    public Integer nbMots(){​​​​​
+        return wordRepository.getNbMots();
+    }​​​​​
+}​​​​​
+
+<https://teams.microsoft.com/l/message/19:9b796986f01943d496698f808dc4a4e1@thread.tacv2/1615999456829?tenantId=967236d1-9003-4f1a-9556-8afe047945f1&amp;groupId=3eb4c95f-61e1-47a3-9ed4-29bb225d1d3d&amp;parentMessageId=1615997251797&amp;teamName=IUTo_ETU_Info_S4_2A3&amp;channelName=M4104C-Applications Mobiles&amp;createdTime=1615999456829>

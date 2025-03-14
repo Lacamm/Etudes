@@ -1,0 +1,50 @@
+ALLAIN Lucas
+
+Programmation répartie DS
+
+
+Exercice 1:
+
+1.1) Un deadlock est le fait que 2 processus s'attendent mutuellement.
+Ceci peut entrainer un blocage définitif du programme.
+C'est difficilement détectable, car cela ne renvoit pas d'erreur.
+
+1.2) Les verrous offrent un synchronisation plus flexible que les blocs synchronized.
+Ils sont présents dans de nombreux langages.
+
+1.3) Il s'agit d'un réveil d'un thread par une variable qu'il attendait, alors que 
+la condition n'est pas satisfaite. Pour les éviter, il faut une meilleure gestion 
+des variables.
+
+1.4) Le framework Executor permet de créer les threads automatiquement, la gestion
+des threads par Executor est améliorée et un thread pourra executer plusieurs tâches
+successivement.
+
+1.5) Le CountDownLatch, permet aux threads de s'attendre jusqu'à ce que l'ensemble
+des threads aient executés leurs tâches.
+
+Le ConutDownLatch décrémente son conteur de thread à chaque fois qu'un thread arrive,
+contrairement au CyclicBarrier qui lui l'incrémente.
+
+1.6) Il faut lui fournir des méthodes pour pouvoir manipuler l'objet, des jeu de 
+données à manipuler par l'objet et un moyen que communiquer avec l'objet.
+
+
+
+Exercice 2:
+
+2.1) Les bloc synchronized sont mélangés avec les verrous, il faut choisir un des 2
+seulement.
+Le verrou de la méthode recuperer() n'est pas fermer.
+Il n'y a aucun signal sur la condition. 
+Il faut plutôt "throws InterrupedException".
+Au lieu d'un "if" il vaut mieux une boucle "while".
+Il vaut mieux un await à la place d'un wait.
+
+2.2) Dans la méthode run(), il manque un "try catch".
+
+
+
+
+
+

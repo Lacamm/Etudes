@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name" translatable="false">My Application</string>
+    <string name="hello_world">Hello World</string>
+    <string name="img_main" translatable="false">delete or consequences</string>
+</resources>

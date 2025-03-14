@@ -1,0 +1,11 @@
+2 activités
+
+-visualiser des données
+-modifier/supprimer données
+
+recycler view
+
+bd ( 2 tables avec 1 relation)
+
+
+utilisateur/dépenses/groupe

@@ -1,0 +1,817 @@
+<quiz>
+  <question type="multichoice" updated="no">
+    <name>
+      <text>Unit&#233; 2</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;p&gt;La s&#232;ve ascendante, riche en eau et en sels min&#233;raux est:&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text>&lt;p&gt;La s&#232;ve brute circule dans les vaisseaux du bois, des racines vers les feuilles, alors que la s&#232;ve &#233;labor&#233;e descend.&lt;/p&gt;</text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text>&lt;p&gt;C'est bien, continues!&lt;/p&gt;</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text />
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>&lt;p&gt;Il faut revoir les termes exacts!&lt;/p&gt;</text>
+    </incorrectfeedback>
+    <answer format="html" fraction="100">
+      <text>&lt;p&gt;la s&#232;ve brute&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+    <answer format="html" fraction="-5">
+      <text>&lt;p&gt;la s&#232;ve &#233;labor&#233;e&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+    <answer format="html" fraction="-5">
+      <text>&lt;p&gt;la s&#232;ve modifi&#233;e&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+    <answer format="html" fraction="-5">
+      <text>&lt;p&gt;la s&#232;ve transform&#233;e&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+  </question>
+
+
+  <question type="multichoice" updated="no">
+    <name>
+      <text>Unit&#233;1</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;p&gt;La r&#233;action qui permet, &#224; partir d'&#233;l&#233;ments min&#233;raux de fabriquer des petites mol&#233;cules organiques et qui utilise la lumi&#232;re comme source d'&#233;nergie est:&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text>&lt;p&gt;L'&#233;quation de la photosynth&#232;se est 6 CO2 + 6 H2O + &#233;nergie =&amp;gt; C6H12O6 + H2O&lt;/p&gt;</text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text>&lt;p&gt;Bien jou&#233;!&lt;/p&gt;</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text />
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>&lt;p&gt;Tu croyais quoi?&lt;/p&gt;</text>
+    </incorrectfeedback>
+    <answer format="html" fraction="100">
+      <text>&lt;p&gt;Photosynth&#232;se&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+    <answer format="html" fraction="-5">
+      <text>&lt;p&gt;Respiration&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+    <answer format="html" fraction="-5">
+      <text>&lt;p&gt;Digestion&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+    <answer format="html" fraction="-5">
+      <text>&lt;p&gt;Absorption&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+  </question>
+
+
+  <question type="multichoice" updated="no">
+    <name>
+      <text>Unit&#233;10</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;p&gt;Quelle est la grande diff&#233;rence entre les eucaryotes et les procaryotes?&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text>&lt;p&gt;Chez les procaryotes l'ADN est libre dans la cellule&lt;/p&gt;</text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text>&lt;p&gt;La g&#233;n&#233;tique n'a pas de secret pour toi on dirait!&lt;/p&gt;</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text />
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>&lt;p&gt;Si ta r&#233;ponse &#233;tait bonne, nous serions bizarrement constitu&#233;s...&lt;/p&gt;</text>
+    </incorrectfeedback>
+    <answer format="html" fraction="100">
+      <text>&lt;p&gt;ADN dans le noyau pour les eucaryotes&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+    <answer format="html" fraction="-5">
+      <text>&lt;p&gt;Pas de cytoplasme chez les procaryotes&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+    <answer format="html" fraction="-5">
+      <text>&lt;p&gt;ADN hors de la cellule chez les eucaryotes&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+    <answer format="html" fraction="-5">
+      <text>&lt;p&gt;Pas d'ADN chez les procaryotes&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+  </question>
+
+
+  <question type="multichoice" updated="no">
+    <name>
+      <text>Unit&#233;11</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;p&gt;Compl&#232;te: la cellule est la plus petite unit&#233; poss&#233;dant...&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text>&lt;p&gt;Elle est capable de se reproduire d'&#233;changes de la mati&#232;re et de l'&#233;nergie avec le milieu et de synth&#233;tiser des substances organiques&lt;/p&gt;</text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text>&lt;p&gt;Ol&#233; !!!&lt;/p&gt;</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text />
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>&lt;p&gt;On va dire que c'&#233;tait dur ...&lt;/p&gt;</text>
+    </incorrectfeedback>
+    <answer format="html" fraction="100">
+      <text>&lt;p&gt;Toutes les fonctions caract&#233;ristiques du vivant&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+    <answer format="html" fraction="-5">
+      <text>&lt;p&gt;Des fonctions qui lui sont sp&#233;cifiques&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+    <answer format="html" fraction="-5">
+      <text>&lt;p&gt;Quelques fonctions du vivant&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+    <answer format="html" fraction="-5">
+      <text>&lt;p&gt;Des fonctions caract&#233;ristiques aux v&#233;g&#233;taux&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+  </question>
+
+
+  <question type="multichoice" updated="no">
+    <name>
+      <text>Unit&#233;12</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;p&gt;&lt;strong&gt;6 CO2&lt;/strong&gt; +&lt;strong&gt; 6 H2O&lt;/strong&gt;&#160;=&amp;gt; (&#233;nergie) =&amp;gt;&lt;strong&gt;&#160;6 O2&lt;/strong&gt; +&lt;strong&gt; C6H12O6&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Cette &#233;quation est celle de:&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text>&lt;p&gt;La plante capte l'&#233;nergie lumineuse et transforme les mol&#233;cules min&#233;rales (CO2 / H2O) en mati&#232;re organique (Glucose C6H12O6)&lt;/p&gt;</text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text>&lt;p&gt;Ca marche!&lt;/p&gt;</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text />
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>&lt;p&gt;C'est &#224; connaitre par coeur &#231;a!!!&lt;/p&gt;</text>
+    </incorrectfeedback>
+    <answer format="html" fraction="-5">
+      <text>&lt;p&gt;Respiration&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+    <answer format="html" fraction="100">
+      <text>&lt;p&gt;Photosynth&#232;se&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+    <answer format="html" fraction="-5">
+      <text>&lt;p&gt;Digestion&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+    <answer format="html" fraction="-5">
+      <text>&lt;p&gt;Absorption racinaire&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+  </question>
+
+
+  <question type="multichoice" updated="no">
+    <name>
+      <text>Unit&#233;13</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;p&gt;L'&#233;vapotranspiration correspond &#224;:&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text>&lt;p&gt;C'est le moteur de la conduction de la s&#232;ve.&lt;/p&gt;
+&lt;p&gt;L'eau sort par les stomates.&lt;/p&gt;</text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text>&lt;p&gt;En m&#234;me temps, c'&#233;tait facile!&lt;/p&gt;</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text />
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>&lt;p&gt;Fais courir ton ficus tu verras!&lt;/p&gt;</text>
+    </incorrectfeedback>
+    <answer format="html" fraction="100">
+      <text>&lt;p&gt;La sortie d'eau au niveau des feuilles de la plante&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+    <answer format="html" fraction="-5">
+      <text>&lt;p&gt;La sortie d'eau sous nos aisselles&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+    <answer format="html" fraction="-5">
+      <text>&lt;p&gt;La sortie d'eau sous forme de vapeur dans une cocotte minute&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+    <answer format="html" fraction="-5">
+      <text>&lt;p&gt;Une entr&#233;e d'eau apr&#232;s transpiration&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+  </question>
+
+
+  <question type="multichoice" updated="no">
+    <name>
+      <text>Unit&#233;15</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;p&gt;Sur quoi l'information g&#233;n&#233;tique est-elle support&#233;e?&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text />
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text>&lt;p&gt;Ton p&#232;re est g&#233;n&#233;ticien?&lt;/p&gt;</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text />
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>&lt;p&gt;On va oublier la g&#233;n&#233;tique hein!&lt;/p&gt;</text>
+    </incorrectfeedback>
+    <answer format="html" fraction="100">
+      <text>&lt;p&gt;ADN&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+    <answer format="html" fraction="-5">
+      <text>&lt;p&gt;G&#232;ne&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+    <answer format="html" fraction="-5">
+      <text>&lt;p&gt;ARN&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+    <answer format="html" fraction="-5">
+      <text>&lt;p&gt;Cellule&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+  </question>
+
+
+  <question type="multichoice" updated="no">
+    <name>
+      <text>Unit&#233;18</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;p&gt;Des animaux/v&#233;g&#233;taux qui se ressemblent et qui sont capables de se reproduire entre eux (descendance fertile) sont:&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text />
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text>&lt;p&gt;Je commen&#231;ais &#224; avoir peur...;)&lt;/p&gt;</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text />
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>&lt;p&gt;Heu la on aborde la partie &#233;thique...&lt;/p&gt;</text>
+    </incorrectfeedback>
+    <answer format="html" fraction="100">
+      <text>&lt;p&gt;De m&#234;me esp&#232;ce&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+    <answer format="html" fraction="-5">
+      <text>&lt;p&gt;De m&#234;me famille&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+    <answer format="html" fraction="-5">
+      <text>&lt;p&gt;De m&#234;me race&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+    <answer format="html" fraction="-5">
+      <text>&lt;p&gt;De m&#234;me groupe&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+  </question>
+
+
+  <question type="multichoice" updated="no">
+    <name>
+      <text>Unit&#233;19</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;p&gt;Un organisme unicellulaire &#224; grande cellule et dont l'ADN est enferm&#233; dans le noyau est:&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text>&lt;p&gt;Les procaryotes sont unicellulaires, microscopiques et l'ADN est libre dans la cellule.&lt;/p&gt;</text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text>&lt;p&gt;Tu venais de le lire avoues?!&lt;/p&gt;</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text />
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>&lt;p&gt;Il ne faut pas confondre!!&lt;/p&gt;</text>
+    </incorrectfeedback>
+    <answer format="html" fraction="100">
+      <text>&lt;p&gt;Eucaryote&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+    <answer format="html" fraction="-5">
+      <text>&lt;p&gt;Procaryote&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+    <answer format="html" fraction="-5">
+      <text>&lt;p&gt;Cellule&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+    <answer format="html" fraction="-5">
+      <text>&lt;p&gt;Organite&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+  </question>
+
+
+  <question type="multichoice" updated="no">
+    <name>
+      <text>Unit&#233;9</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;p&gt;Qu'est-ce qu'un homozygote?&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text />
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text>&lt;p&gt;Tu as fait une licence de g&#233;n&#233;tique?&#160;&lt;/p&gt;</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text />
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>&lt;p&gt;Tu as une vision bizarre de la g&#233;n&#233;tique toi!&lt;/p&gt;</text>
+    </incorrectfeedback>
+    <answer format="html" fraction="100">
+      <text>&lt;p&gt;Un individu &#224; deux all&#232;les identiques&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+    <answer format="html" fraction="-5">
+      <text>&lt;p&gt;Un individu qui aime les personnes du m&#234;me sexe&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+    <answer format="html" fraction="-5">
+      <text>&lt;p&gt;Un descendant de l'homo sapiens&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+    <answer format="html" fraction="-5">
+      <text>&lt;p&gt;Un individu aux zygomatiques identiques&lt;/p&gt;</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+  </question>
+
+
+  <question type="shortanswer" updated="no">
+    <name>
+      <text>Unit&#233;3</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;p&gt;Qu'est-ce qu'un &#234;tre vivant qui se nourrit d'autres &#234;tres vivants pour produire sa propre mati&#232;re organique?&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text />
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer format="moodle_auto_format" fraction="100">
+      <text>H&#233;t&#233;rotrophe</text>
+      <feedback format="html">
+        <text>&lt;p&gt;C'&#233;tait facile!&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer format="moodle_auto_format" fraction="100">
+      <text>h&#233;t&#233;rotrophes</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+    <answer format="moodle_auto_format" fraction="100">
+      <text>un h&#233;t&#233;rotrophe</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+    <answer format="moodle_auto_format" fraction="100">
+      <text>heterotrophe</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+  </question>
+
+
+  <question type="shortanswer" updated="no">
+    <name>
+      <text>Unit&#233;4</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;p&gt;Qu'est-ce qu'un &#234;tre vivant qui fabrique sa propre mati&#232;re organique &#224; partir de mol&#233;cules min&#233;rales simples?&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text>&lt;p&gt;C'&#233;tait une question pour d&#233;butant &#231;a!&lt;/p&gt;</text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer format="moodle_auto_format" fraction="100">
+      <text>autotrophe</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+    <answer format="moodle_auto_format" fraction="100">
+      <text>autotrophes</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+    <answer format="moodle_auto_format" fraction="100">
+      <text>un autotrophe</text>
+      <feedback format="html">
+        <text />
+      </feedback>
+    </answer>
+  </question>
+
+
+  <question type="shortanswer" updated="no">
+    <name>
+      <text>Unit&#233;5</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;p&gt;S&#233;parer des esp&#232;ces en deux ensembles &#224; l'aide d'un crit&#232;re binaire c'est:&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text />
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer format="moodle_auto_format" fraction="100">
+      <text>Trier</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Allez on poursuit!&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+  </question>
+
+
+  <question type="truefalse" updated="no">
+    <name>
+      <text>Unit&#233;14</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;p&gt;Les autotrophes font la photosynth&#232;se durant le jour, et la respiration durant la nuit.&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text>&lt;p&gt;Le jour, ils r&#233;alisent la photosynth&#232;se &lt;span style="text-decoration: underline;"&gt;ET&lt;/span&gt; la respiration&lt;/p&gt;</text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <answer format="moodle_auto_format" fraction="0">
+      <text>true</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Next...&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer format="moodle_auto_format" fraction="100">
+      <text>false</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Pas mal!&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+  </question>
+
+
+  <question type="truefalse" updated="no">
+    <name>
+      <text>Unit&#233;16</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;p&gt;La majeure partie de l'organisme est constitu&#233;e d'eau&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text>&lt;p&gt;Mais aussi de carbone, d'hydrog&#232;ne, d'oxyg&#232;ne, d'azote, de soufre et de phoshore&lt;/p&gt;</text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <answer format="moodle_auto_format" fraction="100">
+      <text>true</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Good!&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer format="moodle_auto_format" fraction="0">
+      <text>false</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Revoies ta composition...&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+  </question>
+
+
+  <question type="truefalse" updated="no">
+    <name>
+      <text>Unit&#233;17</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;p&gt;Se nourrir, se d&#233;placer, communiquer, se prot&#233;ger, se reproduire sont les cinq fonctions universelles du vivant&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text>&lt;p&gt;Elles sont plus ou moins d&#233;velopp&#233;es et se manifestent diff&#233;remment&lt;/p&gt;</text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <answer format="moodle_auto_format" fraction="100">
+      <text>true</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Bravo&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer format="moodle_auto_format" fraction="0">
+      <text>false</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Tu vas avoir du mal &#224; survivre alors...&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+  </question>
+
+
+  <question type="truefalse" updated="no">
+    <name>
+      <text>Unit&#233;20</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;p&gt;Les cellules poss&#232;dent toutes un cytoplasme&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text />
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <answer format="moodle_auto_format" fraction="100">
+      <text>true</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Tu me rassures!&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer format="moodle_auto_format" fraction="0">
+      <text>false</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Oulah, tu vit dans un monde bizarre...&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+  </question>
+
+
+  <question type="truefalse" updated="no">
+    <name>
+      <text>Unit&#233;6</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;p&gt;Ranger correspond &#224; ordonner des esp&#232;ces selon un crit&#232;re continu (ordre alphab&#233;tique, taille, etc.)&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text />
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <answer format="moodle_auto_format" fraction="100">
+      <text>true</text>
+      <feedback format="html">
+        <text>&lt;p&gt;C'est bien tu n'as pas confondu!&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer format="moodle_auto_format" fraction="0">
+      <text>false</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Attention &#224; ne pas confondre ranger, classer et trier...&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+  </question>
+
+
+  <question type="truefalse" updated="no">
+    <name>
+      <text>Unit&#233;7</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;p&gt;Regrouper des esp&#232;ces &#224; partir d'un crit&#232;re qu'elles ont en commun c'est ranger&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text />
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <answer format="moodle_auto_format" fraction="0">
+      <text>true</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Attention &#224; ne pas confondre ranger, trier et classer! Cette d&#233;finition correspond &#224; classer!&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer format="moodle_auto_format" fraction="100">
+      <text>false</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Faux c'est classer (tu le savais?)&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+  </question>
+
+
+  <question type="truefalse" updated="no">
+    <name>
+      <text>Unit&#233;8</text>
+    </name>
+    <questiontext format="html">
+      <text>&lt;p&gt;Les reptiles sont un groupe de la nouvelle classification.&lt;/p&gt;</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text />
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <answer format="moodle_auto_format" fraction="0">
+      <text>true</text>
+      <feedback format="html">
+        <text>&lt;p&gt;C'est faux, on ne parle plus de reptiles dans la nouvelle classification car cela regroupait beaucoup trop d'esp&#232;ces diff&#233;rentes.&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+    <answer format="moodle_auto_format" fraction="100">
+      <text>false</text>
+      <feedback format="html">
+        <text>&lt;p&gt;Bravo, c'&#233;tait un groupe de l'ancienne classification regroupant trop d'esp&#232;ces diff&#233;rentes&lt;/p&gt;</text>
+      </feedback>
+    </answer>
+  </question>
+<question type="multichoice" updated="no">body text</question><question type="multichoice" updated="no">body text</question></quiz>

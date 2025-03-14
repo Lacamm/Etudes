@@ -1,0 +1,102 @@
+---
+id: briquet-000
+type: Thing
+props:
+  - lighter
+  - takable
+name: briquet
+events:
+  info:
+    actor: "Un briquet."
+  look:
+    actor: C'est un briquet qui est utilisable pour allumer un objet inflammable"
+
+--- 
+id: flambeau-000
+type: Thing
+props:
+  - lightable-with
+  - takable
+names   : flambeau
+events:
+  info:
+    actor:
+      - props: =flambeau-000:light-with
+        data : "Un flambeau qui est en feu."
+      - data : "Un flambeau éteint que vous pouvez allumer."
+  look:
+    actor:
+      - props: object:light-with
+        data : "Un flambeau en feu."
+      - data : "Un flambeau éteint."
+  light-on-with:
+    - props : object:light-with
+      actor : "Le flambeau est déjà allumée."
+    - actor : "Vous allumez votre flambeau."
+      observer: |
+        {{ actor.name }} allume son flambeau.
+      effects:
+        - type  : ChangePropEffect
+          modifs: object:light-with
+  light-off:
+    - props : -object:light-with
+      actor : "Le flambeau n'est pas en feu."
+    - actor : "Vous éteignez votre flambeau."
+      observer: |
+        {{ actor.name }} éteind son flambeau.
+      effects:
+        - type  : ChangePropEffect
+          modifs: -object:light-with
+
+---
+id: frigo-000
+type: Container
+name: frigo
+props:
+  - closed
+  - closable
+events:
+  info:
+    actor: "Le fameux frigo des professeurs d'informatique"
+  look:
+    actor: |
+      Vous étes devant le mystérieux frigo de la la salle
+      des profs. Mythes et légendes sont légions autour de
+      ce mythique frigidaire.
+  open: 
+    - props: frigo-000:closed
+      actor: "Le frigo s'ouvre"
+      observer : "{{ actor.name }} ouvre le frigo"
+      effects:
+        type: ChangePropEffect
+        modifs: -frigo-000:closed
+    - props: -frigo-000:closed
+      actor: "Le frigo est deja ouvert"
+contains:
+  - kinder-000
+
+---
+id: portal-salle-des-profs-prison-000
+type: Portal
+exits:
+  - id: prison-000-exit1
+    location: salle-des-profs-000
+    direction: sud-ouest
+    events:
+      enter-portal:
+        actor: |
+          Vous avez mangé le Kinder des profs, désormais vous
+          subirez leur courroux éternel. Personne ne s'est jamais
+          échappé jusqu'à présent...
+        observer: "{{ actor.name }} s'est fait egloutir."
+  - id: prison-000-exit2
+    location: prison-000
+    props:
+      -for-leave
+    events:
+      enter-portal:
+        actor: |
+          Vous voici dans la prison tant redoutée, il ne tient qu'à vous de vous en
+          échapper.
+        observer: |
+          {{actor.name}} à atterit dans un lieu inconnu

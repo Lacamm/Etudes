@@ -1,0 +1,76 @@
+body{
+    background-image: url("Images/Fond_quadrillage.jpg");
+}
+
+header{
+    border: 3px black solid;
+}
+
+footer{
+    border: 2px black solid;
+}
+
+aside{
+    float: right;
+    border: 2px black solid;
+    padding: 10px 10px 10px 0;
+    height: auto;
+}
+
+h2{
+    margin-left: 0.5em;
+}
+
+h3{
+    border: 1px black solid;
+    margin-left: 2em;
+}
+
+p{
+    padding-left: 1em;
+    margin-left: 0;
+}
+
+img{
+    border: 0.1em black solid;
+    margin: 1em 0 1em 1em;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.Bannière{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Droite{
+    display: flex;
+}
+
+.Réseaux{
+    border: 1px black solid;
+    margin-left:0;
+}
+
+.menu_onglet{
+    border: 2px black solid;
+    margin-left: auto;
+    width: 100%;
+}
+
+.Personnage{
+    border: 0.01em black solid;
+    width: 80%;
+    margin-bottom: 1em;
+    margin-right: 1em;
+}
+
+#menu_liste{
+    display: flex;
+    margin-left:0;
+    padding:0;
+    text-align: center;
+}

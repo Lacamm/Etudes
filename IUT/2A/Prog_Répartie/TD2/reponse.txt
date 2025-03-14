@@ -1,0 +1,11 @@
+Exo 1
+
+1) Non, parce que syncrhonized
+
+2) Oui
+
+3) Oui, pas static
+
+4) non, l'un puis l'autre (2 threads)
+
+5) interblocage, 1 thread à un lock sur (m1 ou m2) et demande à faire l'autre

@@ -1,0 +1,3 @@
+class FabriqueGobelin
+!!!149891.java!!!	creerPNJ(in nom : String) : PNJ
+        return new Gobelin(nom);

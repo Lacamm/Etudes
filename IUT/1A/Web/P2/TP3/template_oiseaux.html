@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang='fr'>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Oiseaux de Martine</title>
+        <link rel='stylesheet' href='../CSS_oiseaux.css'/>
+    </head>
+    <body>
+        <header>
+            <h1>Les photos de Martine</h1>
+        </header>
+        
+        {% if lien_prec %}
+            <a href="{{lien_prec}}" >Page précédente</a>
+        {% endif %}
+        
+        {% if lien_suiv %}
+            <a class='suivant' href="{{lien_suiv}}" >Page suivante</a>
+        {% endif %}
+        <section>
+            <h3>Photos de la {{nom_page}}</h3>
+            {% for image in galerie %}
+                <img src={{rep+image}}/>
+            {% endfor %}
+    </section>
+    </body>
+</html>

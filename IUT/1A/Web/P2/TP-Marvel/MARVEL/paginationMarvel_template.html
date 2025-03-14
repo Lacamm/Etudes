@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8"/>
+	<title>Pagination</title>
+  <link rel ="stylesheet" href=""/>
+</head>
+<body>
+	<header>
+		<h1>{{titre}}</h1>
+	</header>
+	<table>
+				<h1>Personnages par Team </h1>
+				<tr><th>Personnages Avengers</th>
+				{% for (nom,_,image) in Avengers %}
+				<td >			<h3>{{nom}}</h3>
+							<img src="{{repertoire}}{{image}}"/></td>
+				{% endfor %}
+				</tr>
+				<tr><th>Personnages Gardians</th>
+				{% for (nom,_,image) in Gardians %}
+				<td >			<h3>{{nom}}</h3>
+							<img src="{{repertoire}}{{image}}"/></td>
+				{% endfor %}
+				</tr>
+				<tr><th>Personnages Xmens</th>
+				{% for (nom,_,image) in Xmens %}
+				<td >			<h3>{{nom}}</h3>
+							<img src="{{repertoire}}{{image}}"/></td>
+				{% endfor %}
+				</tr>
+				<tr><th>Personnages Mechant</th>
+				{% for (nom,_,image) in Mechant %}
+				<td >			<h3>{{nom}}</h3>
+							<img src="{{repertoire}}{{image}}"/></td>
+				{% endfor %}
+				</tr>
+	</table>
+</body>
+</html>

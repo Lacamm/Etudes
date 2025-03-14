@@ -1,0 +1,31 @@
+[
+    {
+        "type": "ouverte",
+        "contenu": "Comment allez-vous?"
+    },
+    {
+        "type": "choix multiples",
+        "question": "Quelle est votre couleur préférée?",
+        "reponses": ["rouge", "bleu", "je ne sais pas"]
+    },
+    {
+        "type": "approfondie",
+        "question": "Quel est votre module préféré?",
+        "reponses": ["les maths", "la communication", "l'algorithmique avancee"],
+        "sous-questions": [
+            {
+                "type": "ouverte",
+                "contenu": "Combien vaut (7654 * 2345) ^ 456 modulo 654?"
+            },
+            {
+                "type": "ouverte",
+                "contenu": "Décrivez en cinq mots le bonheur d'être en tp"
+            },
+            {
+                "type": "ouverte",
+                "contenu": "Vous seriez pas un peu fayot sur les bords?"
+            }
+        ]
+    }
+
+]

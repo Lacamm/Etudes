@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        tools:context="com.example.jamian.first.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <fragment
+            android:id="@+id/mainNoteFrag"
+            android:name="com.example.jamian.first.MessagesFragment"
+            android:layout_width="330dp"
+            android:layout_height="200dp"
+            android:layout_weight="1" />
+
+        <fragment
+            android:id="@+id/mainNoteDetailFrag"
+            android:name="com.example.jamian.first.MessageDetailFragment"
+            android:layout_width="330dp"
+            android:layout_height="200dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Creer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Créer" />
+
+    <Button
+        android:id="@+id/Supprimer"
+        android:onClick="supprimerMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Supprimer" />
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Perso SW</title>
+    </head>
+    <body>
+        <header>
+            <h1>Personnages principaux des films Stars Wars(épisodes I et II)</h1>
+        </header>
+        <h2>Personnages principaux de l'épisode I:  la menace fantôme</h2>
+        <ul>
+            {% for personnage in liste_episodeI %}
+            <li>{{personnage}}</li>
+            {% endfor %}
+        </ul>
+        <h2>Personnages principaux de l'épisode I : la menvce fantôme(sous forme de tableau en 1 seule lignes)</h2>
+        <table>
+            <tr>
+                {% for personnage in liste_episodeI %}
+                <td>{{personnages}}</td>
+                {% endfor %}
+            </tr>
+        </table>
+    </body>
+</html>

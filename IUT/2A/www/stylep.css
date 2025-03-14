@@ -1,0 +1,29 @@
+body{
+    background-color: #ebe534;
+}
+
+h1{
+    border-bottom: black solid 2px;
+    text-align: center;
+}
+
+.gauche{
+    float: left;
+    margin-right: 2%;
+}
+
+.chiffres{
+    font-weight: bold;
+}
+
+.question{
+    margin-top: 1%;
+}
+
+.formulaire {
+    background-color: #eba234;
+    margin: 5% 5% 5% 5%;
+    padding: 2% 2% 2% 5%;
+    border-radius: 5em;
+}
+

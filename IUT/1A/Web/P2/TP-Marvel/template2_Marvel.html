@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang='fr'>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Personnages de Marvel</title>
+        <link rel='stylesheet' href='../css-Marvel.css'/>
+    </head>
+    <body>
+        <h1>Tous les personnages de Marvel</h1>
+        <table>
+            <tr>
+                
+                <td>{{ nom_orga }}</td>
+                {% for key, values in orag.items() %}
+                    <td><img src="{{repertoire}}{{values}}"/></td>
+                {% endfor %}
+            </tr>
+
+            <h1>Personnages par Team </h1>
+				<tr><th>Personnages Avengers</th>
+				{% for (nom,_,image) in Avengers %}
+				<td >			<h3>{{nom}}</h3>
+							<img src="{{repertoire}}{{image}}"/></td>
+				{% endfor %}
+				</tr>
+				<tr><th>Personnages Gardians</th>
+				{% for (nom,_,image) in Gardians %}
+				<td >			<h3>{{nom}}</h3>
+							<img src="{{repertoire}}{{image}}"/></td>
+				{% endfor %}
+				</tr>
+				<tr><th>Personnages Xmens</th>
+				{% for (nom,_,image) in Xmens %}
+				<td >			<h3>{{nom}}</h3>
+							<img src="{{repertoire}}{{image}}"/></td>
+				{% endfor %}
+				</tr>
+				<tr><th>Personnages Mechant</th>
+				{% for (nom,_,image) in Mechant %}
+				<td >			<h3>{{nom}}</h3>
+							<img src="{{repertoire}}{{image}}"/></td>
+				{% endfor %}
+				</tr>
+        </table>
+    </body>
+</html>

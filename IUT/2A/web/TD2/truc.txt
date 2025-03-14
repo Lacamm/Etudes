@@ -1,0 +1,12 @@
+function fonct2(){
+const liens = document.querySelectorAll('a');
+for (lien of liens)
+console.log(lien.getAttribute('href'));
+}
+
+console.log("Document chargé:"+ document.f1.dateChargement.value);
+
+[17:44] GERARD ROZSAVOLGYI
+    
+window.onload=sauveDateChargement();
+

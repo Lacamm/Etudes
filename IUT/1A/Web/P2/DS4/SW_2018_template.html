@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Eval4</title>
+        <link rel='stylesheet' href='./SW_2018_css.css'/>
+    </head>
+    <body>
+        <header>
+            <h1>Tous les personnages de Star Wars:{{film}}</h1>
+            <img src="{{logo}}" alt="Logo Star Wars">
+        </header>
+        {% for perso in liste_perso %}
+            <ul class="Perso">
+                <h2>{{perso}}</h2>
+                <p>Apparaît dans les épisodes</p>
+                {% for Film in dicoPerso[perso] %}
+                    <ul>
+                        <li>{{Film}}</li>
+                    </ul>
+                {% endfor %}
+            </ul>
+        {% endfor %}
+        <aside>
+            <h3>Personnages par film</h3>
+            <ul>
+                {% for nom in liste %}
+                    <li> {{nom}} </li>
+                {% endfor %}
+            </ul>
+        </aside>
+        <footer>
+            <p>IUT d'informatique d'Orléans - Janvier 2019</p><br>
+            <img src="{{profil}}" alt="Image pour un personnage récurrent"/>
+            <p>signifie que le personnage apparaît dans au moins 4 films</p>
+        </footer>
+    </body>
+</html>

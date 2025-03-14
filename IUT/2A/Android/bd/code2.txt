@@ -1,0 +1,44 @@
+package com.example.recyclerview2021.Tools;
+import android.app.AlertDialog;
+import android.view.View;
+import android.widget.TextView;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+import com.example.recyclerview2021.Model.Prof;
+import com.example.recyclerview2021.R;
+public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnLongClickListener{
+    private TextView tvName;
+    private TextView tvMat;
+    private Prof current;
+    ItemLongClickListener itemLongClickListener;
+    public MyViewHolder(View itemView) {
+        super(itemView);
+        tvName = itemView.findViewById(R.id.tvNomCells);
+        tvMat = itemView.findViewById(R.id.tvMatCells);
+        itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                new AlertDialog.Builder(view.getContext())
+                        .setTitle(current.getNom())
+                        .setMessage(current.getMatiere())
+                        .show();
+            }
+        });
+        
+        itemView.setOnLongClickListener(this);
+    }
+    public void display(Prof p){
+        tvName.setText(p.getNom());
+        tvMat.setText(p.getMatiere());
+        current = p;
+    }
+    @Override
+    public boolean onLongClick(View view) {
+        this.itemLongClickListener.onItemLongClick(view,getLayoutPosition());
+        return false;
+    }
+    
+    public void setItemLongClickListener(ItemLongClickListener ic){
+        this.itemLongClickListener = ic;
+    }
+}

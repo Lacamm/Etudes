@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block main %}
+<h1>{{ title }}</h1>
+<div class="row sample">
+    {% for album in albums %}
+    <div class="mb-3">
+        <a class="col-md-3 col-xs-6  col-sm-4"
+        href="{{ url_for('detail', albumid=album.entryID) }}">
+            <img class="album" src="{{ url_for('static', filename='images/'+album.img) }}" title="{{ album.title + " de " + album.author.name }}"
+                alt="{{ "couverture de " + album.title }}" />
+        </a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

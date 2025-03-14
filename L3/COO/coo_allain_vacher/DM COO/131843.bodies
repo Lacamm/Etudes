@@ -1,0 +1,108 @@
+class Marchand
+!!!160643.java!!!	Marchand()
+        this.boutique = new HashMap<>();
+        this.stocks = new HashMap<>();
+!!!160771.java!!!	findStock(in nom_objet : String) : boolean
+        for(Map.Entry<Objet,Integer> entree : this.stocks.entrySet())
+        {
+            if(entree.getKey().getNom().equals(nom_objet))
+                return true;
+        }
+        return false;
+!!!160899.java!!!	getStock(in nom_objet : String) : Objet
+        for(Map.Entry<Objet,Integer> entree : this.stocks.entrySet())
+        {
+            if(entree.getKey().getNom().equals(nom_objet))
+                return entree.getKey();
+        }
+        return null;
+!!!161027.java!!!	findBoutique(in nom_objet : String) : boolean
+        // Cette méthode permet de savoir si un objet est présent ou non dans l'inventaire
+        for(Map.Entry<Objet,Integer> entree : this.boutique.entrySet())
+        {
+            if(entree.getKey().getNom().equals(nom_objet))
+                return true;
+        }
+        return false;
+!!!161155.java!!!	getBoutique(in nom_objet : String) : Objet
+        // Cette méthode permet de savoir si un objet est présent ou non dans l'inventaire
+        for(Map.Entry<Objet,Integer> entree : this.boutique.entrySet())
+        {
+            if(entree.getKey().getNom().equals(nom_objet))
+                return entree.getKey();
+        }
+        return null;
+!!!161283.java!!!	achatObjet(in nom_objet : String) : Objet
+        if(this.findStock(nom_objet))
+        {
+            Objet objetStock = this.getStock(nom_objet);
+            if(this.stocks.get(objetStock) == 1) {
+                this.stocks.remove(objetStock);
+            }
+            else {
+                this.stocks.put(objetStock, this.stocks.get(objetStock) - 1);
+            }
+            return objetStock;
+        }
+        else if(this.findBoutique(nom_objet))
+        {
+            Objet objetBoutique = this.getBoutique(nom_objet);
+            if(!this.findStock(nom_objet))
+            {
+                System.out.println("PAS DANS LES STOCKS");
+                this.boutique.remove(objetBoutique);
+            }
+            else{
+                if(this.stocks.get(objetBoutique) == 1)
+                    this.stocks.remove(objetBoutique);
+                else {
+                    this.stocks.put(objetBoutique, this.stocks.get(objetBoutique) - 1);
+                }
+            }
+            return objetBoutique;
+        }
+        else
+            return null;
+!!!161411.java!!!	addObjet(inout objet : Objet, inout prix : Integer) : void
+        if(this.boutique.containsKey(objet)){
+            if(this.stocks.containsKey(objet)){
+                this.stocks.put(objet,this.stocks.get(objet) + 1);
+            }
+            else {
+                this.stocks.put(objet, 1);
+            }
+        }
+        this.boutique.put(objet,prix);
+!!!161539.java!!!	acheter(inout perso : Personnage, in nom_objet : String) : void
+        if(this.findBoutique(nom_objet)) {
+            Objet achat = this.getBoutique(nom_objet);
+            if (achat != null) {
+                Integer prix = this.boutique.get(achat);
+                if (prix <= perso.getArgent()) {
+                    perso.setArgent(perso.getArgent() - prix);
+                    System.out.println(perso.getNom() + " a acheté " + nom_objet + ".");
+                    perso.getMonInventaire().ajouterObjet(achat);
+                    this.achatObjet(nom_objet);
+                } else
+                    System.out.println("L'objet que vous souhaitez acheter est trop cher.");
+            }
+        }
+        else
+            System.out.println("Cet objet n'existe pas dans la boutique");
+!!!161667.java!!!	afficherBoutique() : void
+        System.out.println("Objets disponibles à l'achat : ");
+        for(Map.Entry<Objet,Integer> entree : this.boutique.entrySet())
+        {
+            if(entree.getValue() < 10)
+                System.out.println(  entree.getValue() + " $   |  " + entree.getKey().getNom() + " => " + entree.getKey().getEffet());
+            else
+                System.out.println(  entree.getValue() + " $  |  " + entree.getKey().getNom() + " => " + entree.getKey().getEffet());
+        }
+        System.out.println();
+!!!161795.java!!!	afficherStocks() : void
+        System.out.println("Objets dans les stocks : ");
+        for(Map.Entry<Objet,Integer> entree : this.stocks.entrySet())
+        {
+            System.out.println( entree.getKey().getNom() + " : " + entree.getValue());
+        }
+        System.out.println();

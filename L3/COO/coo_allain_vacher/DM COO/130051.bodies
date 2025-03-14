@@ -1,0 +1,27 @@
+class Donjon
+!!!147843.java!!!	Donjon(in nom : String)
+    this.nom = nom;
+    this.listePieces = new ArrayList<>();
+    this.recompenses = new ArrayList<>();
+    this.reussi = false;
+!!!147971.java!!!	getListePieces() : Piece
+    return listePieces;
+!!!148099.java!!!	get_piece(in i : int) : Piece
+    return this.listePieces.get(i);
+!!!148227.java!!!	add_piece(inout piece : Piece) : void
+ this.listePieces.add(piece);
+!!!148355.java!!!	add_loot(inout objet : Objet) : void
+ this.recompenses.add(objet);
+!!!148483.java!!!	getNom() : String
+    return nom;
+!!!148611.java!!!	isReussi() : boolean
+    return reussi;
+!!!148739.java!!!	setReussi(inout reussi : boolean) : void
+    this.reussi = reussi;
+!!!148867.java!!!	getNbPiece() : int
+    return this.listePieces.size();
+!!!148995.java!!!	getRecompenses() : Objet
+    return recompenses;
+!!!149123.java!!!	save() : void
+    for(Piece p: this.listePieces)
+      p.save();

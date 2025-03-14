@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang='fr'>
+    <head>
+        <meta charset="UTF-8">
+        <link rel='stylesheet' href='style.css'>
+        <title>Formulaire</title>
+    </head>
+    <body>
+        <h1>Quizz</h1>
+    <form action="reponse.php" method="post">
+        <div class="gauche">
+            <p>Entrez votre nom:</p>
+            <input type="text" id="lenom" name="lenom" value="Nom">
+        </div>
+        <div>
+            <p>Entrez votre adresse mail:</p>
+            <input type="email" id="mail" name="mail" value="">
+        </div>
+            <br/>
+            <br/>
+            <div>
+                <div>
+                    <div>
+                        <span class="chiffres">Question 1: </span>
+                    </div>
+
+                    <div class="question">
+                        Quelle est la peur d'être constipé ?
+                    </div>
+                    <br/>
+                    <div>
+                        <input type="checkbox" id="Apopathodiaphulatophobie" name="Apopathodiaphulatophobie">L'Apopathodiaphulatophobie
+                        <input type="checkbox" id="Hexakosioihexekontahexaphobie" name="Hexakosioihexekontahexaphobie">L'Hexakosioihexekontahexaphobie
+                        <input type="checkbox" id="JustinBieberphobie" name="JustinBieberphobie">La JustinBieberphobie
+                    </div>
+                    <br/>
+                </div>
+                <div>
+                        <div>
+                            <span class="chiffres">Question 2: </span>
+                        </div>
+    
+                        <div class="question">
+                            Quel est le meilleur jeu ?
+                        </div>
+                        <br/>
+                        <div>
+                            <input type="radio" id="Bugdom" name="jeux">Bugdom
+                            <input type="radio" id="Angry_birds" name="jeux">Angry Birds
+                            <input type="radio" id="Bubsy 3D" name="jeux">Bubsy 3D
+                        </div>
+                        <br/>
+                    </div>
+            <input type="submit" name="validation" value="Validez">
+        </form>
+    </body>
+</html>

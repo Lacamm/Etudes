@@ -1,0 +1,25 @@
+Projet web 2A
+
+ALLAIN Lucas
+CRESPIN Florent
+
+
+Procédure pour lancer le site:
+
+Créer un répertoire "www/" dans votre home
+
+Créer un dossier "SiteWeb" ou autre dans "www/", puis s'y déplacer
+
+Dans un terminal, tapez: apt install nodejs
+Si yarn n'est pas installé: apt install yarnpkg
+
+Puis tapez : npm i json-server
+
+Dans ce dossier, coller l'archive du site et extrayez-là
+
+Pour lancer le json-server: ./node_modules/json-server/lib/cli/bin.js music.json
+
+Enfin rendez-vous sur un navigateur et tapez dans la barre de l'url: localhost
+
+Vous avez accès à l'arborescence du dossier "www/", accéder à SiteWeb/Rendu/todo.html
+

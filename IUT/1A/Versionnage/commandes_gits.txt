@@ -1,0 +1,11 @@
+git --help
+git help -a
+git help -g
+man git int
+
+git init
+git status
+git add
+git commit
+git log
+

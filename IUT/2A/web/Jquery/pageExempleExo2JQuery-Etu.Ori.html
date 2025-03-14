@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="clair.css" />
+    <title>Selection de liens en JS</title>
+
+</head>
+
+<body>
+    <header>
+        <nav id="menu">
+            <ul>
+                <li> <a href="page1.html"> Page 1 </a> </li>
+                <li> <a href="page2.html"> Page 2 </a> </li>
+                <li> <a href="page3.html"> Page 3 </a> </li>
+                <li> <a href="page4.html"> Page 4 </a> </li>
+            </ul>
+        </nav>
+        <section>
+            <article class="my">
+                <div id="un">
+                    Contenu Bla bla ...
+                </div>
+                <div id="deux">
+                    Contenu Bli bli ...
+                </div>
+            </article>
+        </section>
+        <form>
+            <select id='langs'>
+                <option value="fr">Français</option>
+                <option value='en'>Anglais</option>
+                <option value='tb'>Tibétain</option>
+            </select>
+            <p> CP <input type="text" id="cp" size="5"> </p>
+        </form>
+        <button id="chgcss"> ChangeCSS </button>
+</body>
+<script src="./jquery.min.js"></script>
+<script>
+    question1 = () => {
+        // tous les elts de la page
+        const all = $('*');
+        for (elt of all) console.log(elt);
+    };
+    question2 = () => {
+        const links = $('a');
+        for (elt of links) console.log(elt);
+    };
+
+    $(document).ready(function () {
+
+        question2();
+        //question3();
+
+    });
+</script>
+<script>
+    // exo4 jQuery
+    // changement dynamique de feuille de style
+    $('#chgcss').click(
+        function () {
+
+        });
+</script>
+
+</html>

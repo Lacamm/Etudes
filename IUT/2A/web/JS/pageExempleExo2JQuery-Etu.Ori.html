@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="clair.css" />
+    <title>Selection de liens en JS</title>
+
+</head>
+
+<body>
+    <header>
+        <nav id="menu">
+            <ul>
+                <li> <a href="page1.html"> Page 1 </a> </li>
+                <li> <a href="page2.html"> Page 2 </a> </li>
+                <li> <a href="page3.html"> Page 3 </a> </li>
+                <li> <a href="page4.html"> Page 4 </a> </li>
+            </ul>
+        </nav>
+        <section>
+            <article class="my">
+                <div id="un">
+                    Contenu Bla bla ...
+                </div>
+                <div id="deux">
+                    Contenu Bli bli ...
+                </div>
+            </article>
+        </section>
+        <form>
+            <select id='langs'>
+                <option value="fr">Français</option>
+                <option value='en'>Anglais</option>
+                <option value='tb'>Tibétain</option>
+            </select>
+            <p> CP <input type="text" id="cp" size="5"> </p>
+        </form>
+        <button id="chgcss"> ChangeCSS </button>
+</body>
+<script src="./jquery.min.js"></script>
+<script>
+    question1 = () => {
+        // tous les elts de la page
+        const all = $('*');
+        for (elt of all) console.log(elt);
+    };
+    question2 = () => {
+        const links = $('a');
+        for (elt of links) console.log(elt);
+    };
+
+    question3 = function(){
+        //les textes des liens dans ul
+        const links = $('ul a').text();
+        console.log(links)
+    };
+
+    question4 = function(){
+        // dernier li dans le menu
+        const lastli = $('nav#menuli:last-child');
+        // jquery renvoie une collection
+        // dont je prend le premier elem avec first()
+        // le premier enfant de ce li est un lien a
+        // dont j'affiche l'attribut href
+        console.log(lastli.first().children().attr('href'));
+    };
+
+    queston5 = function(){
+        const article = $('article.my');
+        console.log(article[0]);
+    }
+
+    question6 = function(){
+        const div2 = $('article.my div:nth-child(2)'[0]);
+        console.log(div2);
+    }
+
+    $(document).ready(function () {
+
+        question4();
+        $('#langs').change(() => {
+            const item = $('langs option:selected');
+            const texte = item.text();
+            const val = item.val();
+            alert("Vous avez sélectionné "+texte+' '+val);
+        });
+
+        $("#cp").keyup((event) =>{
+            const cp = $(this).val();
+            if(cp.length == 5) alert("Bon cp!");
+        });
+
+    });
+
+
+</script>
+<script>
+    // exo4 jQuery
+    // changement dynamique de feuille de style
+    $('#chgcss').click(
+        function () {
+            .if ($("link[rel=stylesheet]").attr('href'))
+        });
+</script>
+
+</html>

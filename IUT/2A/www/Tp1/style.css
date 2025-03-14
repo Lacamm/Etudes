@@ -1,0 +1,18 @@
+body{
+    background-color: darksalmon;
+}
+form{
+    background-color: beige;
+    border-top-right-radius: 80px 80px;
+    padding: 5%;
+    margin: 10%;
+}
+h1{
+    size: 500ch;
+    font-size: bold;
+    text-align: center;
+}
+.gauche{
+    float: left;
+    margin-right: 15px;
+}

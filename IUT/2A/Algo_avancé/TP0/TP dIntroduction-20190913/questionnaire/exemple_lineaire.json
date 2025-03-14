@@ -1,0 +1,11 @@
+[
+    {
+        "type": "ouverte",
+        "contenu": "Comment allez-vous?"
+    },
+    {
+        "type": "choix multiples",
+        "question": "Quelle est votre couleur préférée?",
+        "reponses": ["rouge", "bleu", "je ne sais pas"]
+    }
+]

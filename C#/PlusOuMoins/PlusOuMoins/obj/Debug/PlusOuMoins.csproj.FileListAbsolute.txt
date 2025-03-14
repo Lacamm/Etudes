@@ -1,0 +1,7 @@
+C:\Users\LUCAS\source\repos\PlusOuMoins\PlusOuMoins\bin\Debug\PlusOuMoins.exe.config
+C:\Users\LUCAS\source\repos\PlusOuMoins\PlusOuMoins\bin\Debug\PlusOuMoins.exe
+C:\Users\LUCAS\source\repos\PlusOuMoins\PlusOuMoins\bin\Debug\PlusOuMoins.pdb
+C:\Users\LUCAS\source\repos\PlusOuMoins\PlusOuMoins\obj\Debug\PlusOuMoins.csprojAssemblyReference.cache
+C:\Users\LUCAS\source\repos\PlusOuMoins\PlusOuMoins\obj\Debug\PlusOuMoins.csproj.CoreCompileInputs.cache
+C:\Users\LUCAS\source\repos\PlusOuMoins\PlusOuMoins\obj\Debug\PlusOuMoins.exe
+C:\Users\LUCAS\source\repos\PlusOuMoins\PlusOuMoins\obj\Debug\PlusOuMoins.pdb

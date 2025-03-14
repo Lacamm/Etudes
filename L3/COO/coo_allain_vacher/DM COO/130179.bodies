@@ -1,0 +1,56 @@
+class Piece
+!!!164099.java!!!	Piece()
+    this.listeEnnemis = new ArrayList<>();
+    this.listeVaincus = new ArrayList<>();
+!!!164227.java!!!	afficher_ennemis() : void
+    System.out.println("Voici les monstres présents : ");
+    for(int i = 0; i < this.listeEnnemis.size(); i++)
+    {
+      System.out.println( this.listeEnnemis.get(i).getNom() + " le " + this.listeEnnemis.get(i).getClasse() + " | PV : " + this.listeEnnemis.get(i).getVie() + "/" + this.listeEnnemis.get(i).getVieMax());
+    }
+    System.out.println("");
+!!!164355.java!!!	add_ennemis(inout monstre : PNJ) : void
+    this.listeEnnemis.add(monstre);
+!!!164483.java!!!	getEnnemis(inout m : PNJ) : PNJ
+    for(PNJ monstre : this.listeEnnemis) {
+      if (monstre.getNom() == m.getNom())
+        return monstre;
+    }
+    return null;
+!!!164611.java!!!	getListeVaincus() : PNJ
+    return listeVaincus;
+!!!164739.java!!!	save() : void
+    // Cette methode permet de remettre le donjon à son etat d'origine
+    if(!this.listeEnnemis.isEmpty())
+    {
+      for(PNJ monstre : this.listeEnnemis)
+      {
+        monstre.setVie(monstre.getVieMax());
+      }
+    }
+    for(PNJ monstre : this.listeVaincus)
+    {
+      if(!this.findEnnemis(monstre.getNom()))
+        monstre.setVie(monstre.getVieMax());
+        this.listeEnnemis.add(monstre);
+    }
+!!!164867.java!!!	delEnnemis(inout monstre : PNJ) : void
+this.listeEnnemis.remove(monstre);
+!!!164995.java!!!	getListeEnnemis() : PNJ
+    return listeEnnemis;
+!!!165123.java!!!	getEnnemis(in nom : String) : PNJ
+    for(PNJ monstre : this.listeEnnemis)
+    {
+      if(monstre.getNom().equals(nom))
+        return monstre;
+    }
+    return null;
+!!!165251.java!!!	findEnnemis(in nom : String) : boolean
+    for(PNJ monstre : this.listeEnnemis)
+    {
+      if(monstre.getNom().equals(nom))
+        return true;
+    }
+    return false;
+!!!165379.java!!!	getNbEnnemis() : int
+ return this.listeEnnemis.size();

@@ -1,0 +1,7 @@
+C:\Users\LUCAS\Documents\Programmation\C#\TP boucles\TP boucles\obj\Debug\TP boucles.csprojAssemblyReference.cache
+C:\Users\LUCAS\Documents\Programmation\C#\TP boucles\TP boucles\obj\Debug\TP boucles.csproj.CoreCompileInputs.cache
+C:\Users\LUCAS\Documents\Programmation\C#\TP boucles\TP boucles\bin\Debug\TP boucles.exe.config
+C:\Users\LUCAS\Documents\Programmation\C#\TP boucles\TP boucles\bin\Debug\TP boucles.exe
+C:\Users\LUCAS\Documents\Programmation\C#\TP boucles\TP boucles\bin\Debug\TP boucles.pdb
+C:\Users\LUCAS\Documents\Programmation\C#\TP boucles\TP boucles\obj\Debug\TP boucles.exe
+C:\Users\LUCAS\Documents\Programmation\C#\TP boucles\TP boucles\obj\Debug\TP boucles.pdb
